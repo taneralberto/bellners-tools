@@ -1,7 +1,7 @@
 <div class="image">
 <?
 $id = get_the_ID( );
-get_template_part( 'template-parts/components/atoms/thumbnail/thumbnail');
+Atomic::atom( 'thumbnail' );
 $image = Thumbnail::post ( $id, 'medium' );
 ?>
 
@@ -9,6 +9,6 @@ $image = Thumbnail::post ( $id, 'medium' );
 
 <?php
 
-get_template_part( 'template-parts/components/atoms/caption/caption');
+Atomic::atom( 'caption' );
 ?>
 </div>
