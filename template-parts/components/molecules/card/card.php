@@ -4,7 +4,7 @@ class Card {
 
     public static function product () {
 
-        require_once( './product/card' );
+        get_template_part( 'template-parts/components/molecules/card/product/card' );
     }
 
     public static function blog () {

@@ -25,7 +25,7 @@ class Title {
         return $title;
     }
 
-    private function requestApi( $cpt, $id ) {
+    private static function requestApi( $cpt, $id ) {
 
         $url = get_site_url() . '/wp-json/wp/v2/'. $cpt .'/' . $id;
         $file = @file_get_contents($url);
