@@ -34,3 +34,4 @@ class Title {
         return $json;
     }
 }
+//the_title();
