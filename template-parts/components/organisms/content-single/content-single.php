@@ -1,7 +1,19 @@
 <?
-//get_template_part( 'template-parts/components/molecules/image/image');
+$id = get_the_ID( );
+Atomic::atom( 'title' );
+$title = Title::post ( $id );
+?>
+
+<?= $title ?>
+
+<?
+
 Atomic::molecule( 'image' );
-the_tags( );
-//get_template_part( 'template-parts/components/molecules/bar-social/bar-social' );
+
+Atomic::atom('tags');
+
 Atomic::molecule( 'bar-social' );
-the_content( );
+
+Atomic::atom( 'single-content' );
+
+Atomic::molecule( 'comments' );

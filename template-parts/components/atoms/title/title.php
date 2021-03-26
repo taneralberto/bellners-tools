@@ -3,7 +3,7 @@ class Title {
 
     public static function product ( $id ) {
 
-        $json = requestApi( 'product', $id );
+        $json = self::requestApi( 'product', $id );
 
         $title = $json['title']['rendered'];
         return $title;
@@ -11,7 +11,7 @@ class Title {
 
     public static function page ( $id ) {
 
-        $json = requestApi( 'pages', $id );
+        $json = self::requestApi( 'pages', $id );
 
         $title = $json['title']['rendered'];
         return $title;
@@ -19,7 +19,7 @@ class Title {
 
     public static function post ( $id ) {
 
-        $json = requestApi( 'posts', $id );
+        $json = self::requestApi( 'posts', $id );
 
         $title = $json['title']['rendered'];
         return $title;
@@ -34,3 +34,4 @@ class Title {
         return $json;
     }
 }
+//the_title();
