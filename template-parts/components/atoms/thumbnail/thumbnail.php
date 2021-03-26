@@ -1,7 +1,7 @@
 <?php
 class Thumbnail {
 
-    public static function post ( $id , $size ) {
+    public static function post ( $id ) {
 
         $json = self::requestApi( 'posts', $id );
         $image_id = $json['featured_media'];
@@ -14,16 +14,16 @@ class Thumbnail {
 
     public static function product ( $id ) {
 
-        $json = self::requestApi( 'products', $id );
+        $json = self::requestApi( 'product', $id );
         $image_id = $json['featured_media'];
 
-        $json = requestApi( 'media', $image_id );
+        $json = self::requestApi( 'media', $image_id );
         $image = $json['description']['rendered'];
 
         return $image;
     }
 
-    private function requestApi( $cpt, $id ) {
+    private static function requestApi( $cpt, $id ) {
 
         $url = get_site_url() . '/wp-json/wp/v2/'. $cpt .'/' . $id;
         $file = @file_get_contents($url);
