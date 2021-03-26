@@ -27,7 +27,7 @@ class Title {
 
     private function requestApi( $cpt, $id ) {
 
-        $url = 'http://localhost/bellner-tools/wp-json/wp/v2/'. $cpt .'/' . $id;
+        $url = get_site_url() . '/wp-json/wp/v2/'. $cpt .'/' . $id;
         $file = @file_get_contents($url);
         $json = json_decode($file, true);
 
