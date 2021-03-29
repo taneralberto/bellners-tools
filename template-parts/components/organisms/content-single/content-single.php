@@ -11,15 +11,15 @@
     <? Atomic::molecule( 'image' ); ?>
 </div>
 
-<div class="container-single__tags">
+<div class="container-single__tags selected">
     <? Atomic::atom('tags'); ?>
 </div>
 
-<div class="container-single__social">
+<div class="container-single__social selected">
     <h1 class="container-single__social__title">
         Share this post!
     </h1>
-    <ul class="container-single__social__list">
+    <ul class="container-single__social__list selected">
         <? Atomic::molecule( 'bar-social' ); ?>
     </ul>
 </div>
