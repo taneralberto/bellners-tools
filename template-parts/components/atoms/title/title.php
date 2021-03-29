@@ -1,11 +1,12 @@
 <?php
-class Title {
+/*class Title {
 
     public static function product ( $id ) {
 
         $json = self::requestApi( 'product', $id );
 
         $title = $json['title']['rendered'];
+
         return $title;
     }
 
@@ -25,7 +26,7 @@ class Title {
         return $title;
     }
 
-    private static function requestApi( $cpt, $id ) {
+    private static function requestApi( $cpt, $id = '' ) {
 
         $url = get_site_url() . '/wp-json/wp/v2/'. $cpt .'/' . $id;
         $file = @file_get_contents($url);
@@ -33,5 +34,6 @@ class Title {
 
         return $json;
     }
-}
-//the_title();
+}*/
+
+the_title();

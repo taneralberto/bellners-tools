@@ -15,27 +15,20 @@ get_header();
 				<?php
 			endif;
 
-			$args = array(
-				'posts_per_page' => 5,
-				'post_type' => 'product',
-			);
-
-			$query = new WP_Query( $args );
-
 			/* Start the Loop */
-			while ( $query->have_posts() ) :
-				$query->the_post();
+			while ( have_posts() ) :
+				the_post();
 
 				/*
 				 * Include the Post-Type-specific template for the content.
 				 * If you want to override this in a child theme, then include a file
 				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
 				 */
-				get_template_part( 'template-parts/content', 'home' );
+				Atomic::template( 'home' );
 
 			endwhile;
 
-			the_posts_navigation();
+			//the_posts_navigation();
 
 		else :
 
@@ -47,5 +40,5 @@ get_header();
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
+//get_sidebar();
 get_footer();

@@ -1,14 +1,12 @@
 <?php
+if ( $args['type'] === 'product' ) {
 
-class Card {
+    Atomic::common( 'molecules/card/product/card' );
 
-    public static function product () {
+} else if ( $args['type'] === 'blog' ) {
 
-        get_template_part( 'template-parts/components/molecules/card/product/card' );
-    }
+    Atomic::common( 'molecules/card/blog/card' );
 
-    public static function blog () {
-
-        require_once( './blog/card' );
-    }
 }
+
+
