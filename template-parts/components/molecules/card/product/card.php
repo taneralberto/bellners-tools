@@ -1,28 +1,14 @@
-<?php
-//$id = get_the_ID( );
-Atomic::atom( 'thumbnail' );
-Atomic::atom( 'title' );
-Atomic::atom( 'price' );
-
-$title = Title::product( $id );
-$image = Thumbnail::product ( $id );
-//$price = Price::regular();
-
-?>
-
 <div class="product-card">
     <div class="product-card__image">
-    <?= $image ?>
+        <?= $this->image ?>
     </div>
 
     <div class="product-card__info">
         <div class="product-card__title">
-        <?= $title ?>
+            <?= $this->title ?>
         </div>
 
         <div class="product-card__price">
-        Precio:
-        <?= $price ?>
         </div>
     </div>
 </div>
