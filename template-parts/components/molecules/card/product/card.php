@@ -1,9 +1,13 @@
 <?php
-$id = get_the_ID( );
+//$id = get_the_ID( );
 Atomic::atom( 'thumbnail' );
 Atomic::atom( 'title' );
+Atomic::atom( 'price' );
+
 $title = Title::product( $id );
 $image = Thumbnail::product ( $id );
+//$price = Price::regular();
+
 ?>
 
 <div class="product-card">
@@ -17,7 +21,8 @@ $image = Thumbnail::product ( $id );
         </div>
 
         <div class="product-card__price">
-        
+        Precio:
+        <?= $price ?>
         </div>
     </div>
 </div>
