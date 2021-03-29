@@ -1,4 +1,4 @@
-<h1 class="container-single__title">
+<h1 class="container-single__title selected">
     <?
         $id = get_the_ID( );
         Atomic::atom( 'title' );
