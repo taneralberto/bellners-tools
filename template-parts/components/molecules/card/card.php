@@ -2,9 +2,20 @@
 
 class Card {
 
-    public static function product () {
+    protected $id;
 
-        get_template_part( 'template-parts/components/molecules/card/product/card' );
+    public function __construct( $id ) {
+        $this->id = $id;
+    }
+
+    public function __set( $name, $value ) {
+        $this->
+    }
+
+    public static function product ( $id ) {
+
+        Atomic::common( 'molecules/card/product/product' );
+        new Product( $id );
     }
 
     public static function blog () {
@@ -12,3 +23,4 @@ class Card {
         require_once( './blog/card' );
     }
 }
+

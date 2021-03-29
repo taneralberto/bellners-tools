@@ -174,7 +174,7 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Configuration features.
  */
-require get_template_directory() . '/inc/Classes/config.php';
+require get_template_directory() . '/inc/Classes/atomic.php';
 
 /**
  * Load Jetpack compatibility file.

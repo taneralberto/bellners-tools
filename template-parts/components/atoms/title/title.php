@@ -6,7 +6,10 @@ class Title {
         $json = self::requestApi( 'product', $id );
 
         $title = $json['title']['rendered'];
+
         return $title;
+
+        //return get_the_title();
     }
 
     public static function page ( $id ) {
@@ -25,7 +28,7 @@ class Title {
         return $title;
     }
 
-    private static function requestApi( $cpt, $id ) {
+    private static function requestApi( $cpt, $id = '' ) {
 
         $url = get_site_url() . '/wp-json/wp/v2/'. $cpt .'/' . $id;
         $file = @file_get_contents($url);
