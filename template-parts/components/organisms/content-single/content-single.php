@@ -1,4 +1,4 @@
-<h1 class="container-single__title">
+<h1 class="container-single__title selected">
     <?
         $id = get_the_ID( );
         Atomic::atom( 'title' );
@@ -15,8 +15,16 @@
     <? Atomic::atom('tags'); ?>
 </div>
 
+<div class="container-single__social">
+    <h1 class="container-single__social__title">
+        Share this post!
+    </h1>
+    <ul class="container-single__social__list">
+        <? Atomic::molecule( 'bar-social' ); ?>
+    </ul>
+</div>
+
 <?
-Atomic::molecule( 'bar-social' );
 
 Atomic::atom( 'single-content' );
 

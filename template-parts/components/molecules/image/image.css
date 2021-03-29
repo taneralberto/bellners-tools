@@ -2,7 +2,7 @@
     &__image{
         @apply w-full flex flex-col justify-center items-center;
         &__caption{
-            @apply text-sm py-4 italic text-white;
+            @apply text-sm py-4 italic text-bln-white-font;
             &::before{
                 content: "In the picture: ";
                 font-style: normal;
