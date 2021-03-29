@@ -1,0 +1,3 @@
+.container-single{
+    @apply px-4 bg-bln-dark-secondary;
+}

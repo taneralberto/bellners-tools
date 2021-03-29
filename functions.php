@@ -151,6 +151,8 @@ function bellner_tools_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'bellner_tools_scripts' );
 
+wp_enqueue_style( 'bellner-tools-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0' );
+
 /**
  * Implement the Custom Header feature.
  */
