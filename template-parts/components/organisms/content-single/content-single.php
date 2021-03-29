@@ -1,10 +1,6 @@
 <h1 class="container-single__title selected">
-    <?
-        $id = get_the_ID( );
-        Atomic::atom( 'title' );
-        $title = Title::post ( $id );
-    ?>
-    <?= $title ?>
+<? Atomic::atom( 'title' ); ?>
+
 </h1>
 
 <div class="container-single__image">
