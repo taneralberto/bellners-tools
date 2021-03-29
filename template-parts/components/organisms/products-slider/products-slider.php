@@ -12,8 +12,7 @@ if ( $query->have_posts() ) {
 
         //$product = wc_get_product( $id );
 
-        Atomic::molecule( 'card' );
-        Card::product( get_the_ID() );
+        Atomic::molecule( 'card', ['type' => 'product'] );
 
     }
 }

@@ -1,14 +1,9 @@
-<div class="image">
 <?
-$id = get_the_ID( );
-Atomic::atom( 'thumbnail' );
-$image = Thumbnail::post ( $id, 'medium' );
+Atomic::atom( 'thumbnail', ['size' => 'large'] );
 ?>
 
-<?= $image ?>
-
-<?php
-
-Atomic::atom( 'caption' );
-?>
+<div class="container-single__image__caption">
+    <?php
+        Atomic::atom( 'caption' );
+    ?>
 </div>

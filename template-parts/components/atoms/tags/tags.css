@@ -1,0 +1,5 @@
+.container-single{
+    &__tags{
+        @apply flex flex-row gap-2;
+    }
+}

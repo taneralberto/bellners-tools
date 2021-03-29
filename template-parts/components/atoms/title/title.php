@@ -1,5 +1,5 @@
 <?php
-class Title {
+/*class Title {
 
     public static function product ( $id ) {
 
@@ -8,8 +8,6 @@ class Title {
         $title = $json['title']['rendered'];
 
         return $title;
-
-        //return get_the_title();
     }
 
     public static function page ( $id ) {
@@ -36,4 +34,6 @@ class Title {
 
         return $json;
     }
-}
+}*/
+
+the_title();

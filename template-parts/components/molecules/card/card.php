@@ -1,26 +1,12 @@
 <?php
+if ( $args['type'] === 'product' ) {
 
-class Card {
+    Atomic::common( 'molecules/card/product/card' );
 
-    protected $id;
+} else if ( $args['type'] === 'blog' ) {
 
-    public function __construct( $id ) {
-        $this->id = $id;
-    }
+    Atomic::common( 'molecules/card/blog/card' );
 
-    public function __set( $name, $value ) {
-        $this->
-    }
-
-    public static function product ( $id ) {
-
-        Atomic::common( 'molecules/card/product/product' );
-        new Product( $id );
-    }
-
-    public static function blog () {
-
-        require_once( './blog/card' );
-    }
 }
+
 

@@ -1,0 +1,12 @@
+.container-single{
+    &__image{
+        @apply w-full flex flex-col justify-center items-center;
+        &__caption{
+            @apply text-sm py-4 italic text-white;
+            &::before{
+                content: "In the picture: ";
+                font-style: normal;
+            }
+        }
+    }
+}
