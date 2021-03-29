@@ -1,0 +1,11 @@
+.container-single{
+    &__social{
+        @apply w-full flex flex-col gap-2;
+            &__title{
+                @apply text-xl;
+            }
+            &__list{
+                @apply flex flex-row px-2 gap-2;
+            }
+    }
+}
