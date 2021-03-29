@@ -2,7 +2,7 @@
 <?
 $id = get_the_ID( );
 Atomic::atom( 'thumbnail' );
-$image = Thumbnail::post ( $id, 'medium' );
+$image = Thumbnail::post ( $id, 'full' );
 ?>
 
 <?= $image ?>

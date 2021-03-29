@@ -1,3 +1,4 @@
 .container-single{
-    @apply px-4 bg-bln-dark-secondary;
+    @apply px-4 bg-bln-dark-primary text-bln-gray-font;
+    font-family: 'Montserrat', sans-serif;
 }

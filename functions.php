@@ -152,6 +152,7 @@ function bellner_tools_scripts() {
 add_action( 'wp_enqueue_scripts', 'bellner_tools_scripts' );
 
 wp_enqueue_style( 'bellner-tools-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0' );
+wp_enqueue_style('monserrat_google_fonts', "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap");
 
 /**
  * Implement the Custom Header feature.

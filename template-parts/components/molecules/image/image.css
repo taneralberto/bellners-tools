@@ -1,0 +1,5 @@
+.container-single{
+    &__image{
+        @apply w-full flex justify-center;
+    }
+}

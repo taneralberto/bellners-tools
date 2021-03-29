@@ -1,0 +1,5 @@
+.container-single{
+    &__title{
+        @apply text-3xl font-bold text-white;
+    }
+}
