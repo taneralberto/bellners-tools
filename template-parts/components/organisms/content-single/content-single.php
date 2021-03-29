@@ -10,9 +10,12 @@
 <div class="container-single__image">
     <? Atomic::molecule( 'image' ); ?>
 </div>
-<?
-Atomic::atom('tags');
 
+<div class="container-single__tags">
+    <? Atomic::atom('tags'); ?>
+</div>
+
+<?
 Atomic::molecule( 'bar-social' );
 
 Atomic::atom( 'single-content' );

@@ -1,14 +1,13 @@
-<div class="image">
 <?
 $id = get_the_ID( );
 Atomic::atom( 'thumbnail' );
-$image = Thumbnail::post ( $id, 'full' );
+new Thumbnail('large' );
 ?>
 
-<?= $image ?>
 
+
+<div class="container-single__image__caption">
 <?php
-
-Atomic::atom( 'caption' );
+    Atomic::atom( 'caption' );
 ?>
 </div>
