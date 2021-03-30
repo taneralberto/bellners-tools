@@ -20,8 +20,9 @@
     </ul>
 </div>
 
+<div class="container-single__content">
+    Atomic::atom( 'single-content' );
+</div>
+
 <?
-
-Atomic::atom( 'single-content' );
-
 Atomic::molecule( 'comments' );
