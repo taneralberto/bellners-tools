@@ -1,0 +1,26 @@
+.product-card {
+
+    &__price {
+        @apply block;
+
+        &__normal {
+            @apply font-bold text-lg text-bln-white-font;
+        }
+
+        &__regular {
+            @apply font-normal text-lg text-bln-white-font line-through;
+        }
+
+        &__sale {
+            @apply font-bold text-lg text-bln-white-font;
+        }
+    }
+
+    &:hover {
+
+        .product-card__price {
+            @apply hidden;
+        }
+    }
+
+}

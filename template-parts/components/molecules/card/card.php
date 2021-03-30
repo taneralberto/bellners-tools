@@ -1,4 +1,5 @@
 <?php
+
 if ( $args['type'] === 'product' ) {
 
     Atomic::common( 'molecules/card/product/card' );

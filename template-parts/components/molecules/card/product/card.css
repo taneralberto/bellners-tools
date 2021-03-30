@@ -1,0 +1,5 @@
+.product-card {
+
+    @apply flex flex-col row-gap-2;
+    width: 400px;
+}

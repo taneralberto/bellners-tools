@@ -1,25 +1,17 @@
 <?php
-class Price {
 
-    public function __construct() {
+$product = wc_get_product();
 
-        $this->product = wc_get_product( $id );
-    }
+if ( $args['type'] === 'regular' ) {
 
-    public static function regular () {
+    echo $product->get_regular_price();
 
-        $product = wc_get_product( $id );
+} else if ( $args['type'] === 'sale' ) {
 
-        return $product->get_regular_price();
-    }
+    echo $product->get_sale_price();
 
-    public static function sale () {
+} else {
 
-        return $product->get_sale_price();
-    }
+    echo $product->get_price();
 
-    public static function normal() {
-
-        return $product->get_price();
-    }
 }

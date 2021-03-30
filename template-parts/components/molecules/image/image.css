@@ -10,3 +10,10 @@
         }
     }
 }
+
+.product-card {
+
+    &__image {
+        @apply bg-bln-dark-secondary px-10 py-20;
+    }
+}

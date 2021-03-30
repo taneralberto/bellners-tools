@@ -1,5 +1,16 @@
-.container-single{
-    &__title{
+.container-single {
+    &__title {
         @apply py-4 text-3xl font-bold text-bln-white-font;
+    }
+}
+
+.product-card {
+
+    &__title {
+        @apply text-bln-gray-font text-sm font-extrabold cursor-pointer;
+
+        &:hover {
+            @apply transition-colors duration-100 text-bln-red;
+        }
     }
 }
