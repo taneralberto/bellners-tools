@@ -21,8 +21,9 @@
 </div>
 
 <div class="container-single__content">
-    Atomic::atom( 'single-content' );
+    <? Atomic::atom( 'single-content' ); ?>
 </div>
 
-<?
-Atomic::molecule( 'comments' );
+<div class="container-single__comments">
+    <? Atomic::molecule( 'comments' ); ?>
+</div>

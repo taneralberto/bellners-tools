@@ -1,0 +1,8 @@
+.container-single{
+    &__comments{
+        @apply w-full;
+        .comment-form-comment > textarea{
+            @apply w-full;
+        }
+    }
+}
