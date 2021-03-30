@@ -1,5 +1,8 @@
 .container-single{
     &__tags{
         @apply flex flex-row gap-2;
+        &::selection{
+            @apply bg-bln-dark-primary text-bln-gray-font;
+        }
     }
 }

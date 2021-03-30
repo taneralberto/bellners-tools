@@ -7,7 +7,16 @@
                 content: "In the picture: ";
                 font-style: normal;
             }
+            &::selection{
+                @apply bg-bln-dark-primary text-bln-gray-font;
+            }
         }
+    }
+    &__image > img{
+        @apply border-white border-2 cursor-pointer transition-all duration-500;
+            &:hover{
+                @apply w-full;
+            }
     }
 }
 

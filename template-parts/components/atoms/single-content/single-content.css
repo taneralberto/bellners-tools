@@ -1,0 +1,5 @@
+.container-single{
+    &__content{
+        @apply text-justify;
+    }
+}
