@@ -8,6 +8,6 @@ sprintf( '<a href="%s" rel="nofollow" data-product_id="%s" data-product_sku="%s"
     esc_attr( $product->get_sku() ),
     $product->is_purchasable() ? 'add_to_cart_button' : '',
     esc_attr( $product->get_type() ),
-    esc_html( $product->add_to_cart_text() )
+    esc_html( /*$product->add_to_cart_text()*/ 'Add To Cart' )
 ),
 $product );

@@ -1,6 +1,6 @@
 <div class="product-card">
     <div class="product-card__image">
-        <?php Atomic::atom( 'thumbnail', ['size' => 'medium'] ); ?>
+        <?php Atomic::atom( 'thumbnail', ['size' => 'medium', 'type' => 'product'] ); ?>
     </div>
 
     <h1 class="product-card__title">
@@ -12,6 +12,10 @@
             $<?= Atomic::atom( 'price', ['type' => 'sale'] ); ?>
         </span>
 
+        <span class="product-card__price__percent">
+            -<?= Atomic::atom( 'price', ['type' => 'percent'] ); ?>%
+        </span>
+
         <span class="product-card__price__regular">
             $<?= Atomic::atom( 'price', ['type' => 'regular'] ); ?>
         </span>
@@ -21,7 +25,7 @@
         </span>
     </div>
 
-    <span class="product-card__add-to-cart">
-        <?= Atomic::atom( 'add-to-cart' ); ?>
-    </span>
+
+    <?= Atomic::atom( 'add-to-cart' ); ?>
+
 </div>

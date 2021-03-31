@@ -1,3 +1,4 @@
 .home {
     @apply bg-bln-dark-primary;
+    font-family: 'Montserrat', sans-serif;
 }
