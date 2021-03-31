@@ -6,10 +6,10 @@
             .comment-form-comment{
                 @apply flex flex-col gap-4 py-2 text-base text-bln-white-font;
                 &__input{
-                    @apply bg-bln-dark-secondary px-2 py-2 ;
+                    @apply bg-bln-dark-secondary px-2 py-2 rounded-md;
                 }
                 &__textarea{
-                    @apply bg-bln-dark-secondary px-2 py-2;
+                    @apply bg-bln-dark-secondary px-2 py-2 outline-none rounded-md;
                 }
             }
         }

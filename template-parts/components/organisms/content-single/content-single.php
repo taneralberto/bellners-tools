@@ -25,5 +25,5 @@
 </div>
 
 <div class="container-single__comments">
-    <? Atomic::molecule( 'comments' ); ?>
+    <?php comments_template(); ?>
 </div>
