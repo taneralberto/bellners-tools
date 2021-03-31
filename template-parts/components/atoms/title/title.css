@@ -8,9 +8,9 @@
 
     &__title {
         @apply text-bln-gray-font text-sm font-extrabold cursor-pointer;
+    }
 
-        &:hover {
-            @apply transition-colors duration-100 text-bln-red;
-        }
+    &:hover .product-card__title {
+        @apply transition-colors duration-100 text-bln-red;
     }
 }

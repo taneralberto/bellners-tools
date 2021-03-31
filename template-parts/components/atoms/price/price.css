@@ -1,7 +1,7 @@
 .product-card {
 
     &__price {
-        @apply block;
+        @apply block h-8;
 
         &__normal {
             @apply font-bold text-lg text-bln-white-font;
@@ -13,6 +13,10 @@
 
         &__sale {
             @apply font-bold text-lg text-bln-white-font;
+        }
+
+        &__percent {
+            @apply font-bold text-lg text-bln-gray-font;
         }
     }
 

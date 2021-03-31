@@ -1,0 +1,11 @@
+.product-card {
+
+    &__gallery {
+        @apply flex items-center absolute overflow-hidden opacity-0 transition duration-300;
+        width: 300px;
+    }
+
+    &:hover .product-card__gallery {
+            @apply opacity-100;
+    }
+}
