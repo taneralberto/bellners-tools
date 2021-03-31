@@ -1,5 +1,5 @@
 .container-single{
     &__content{
-        @apply text-justify;
+        @apply px-8 py-8 text-justify;
     }
 }

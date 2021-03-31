@@ -1,8 +1,17 @@
 .container-single{
     &__comments{
-        @apply w-full px-2 py-4 text-bln-white-font border-2 border-bln-dark-third rounded-lg;
-        .comment-form-comment > textarea{
-            @apply w-full px-2 py-2 text-bln-dark-third outline-none rounded-md;
+        @apply w-full px-4 py-4 text-bln-white-font border-2 border-bln-dark-third rounded-lg;
+        .comment-form{
+            @apply flex gap-2 flex-col w-2/3;
+            .comment-form-comment{
+                @apply flex flex-col gap-4 py-2 text-base text-bln-white-font;
+                &__input{
+                    @apply bg-bln-dark-secondary px-2 py-2 ;
+                }
+                &__textarea{
+                    @apply bg-bln-dark-secondary
+                }
+            }
         }
         .form-submit{
             @apply text-bln-white-font flex justify-center;
