@@ -1,16 +1,10 @@
 .container-single{
     &__comments{
-        @apply w-full px-4 py-4 text-bln-white-font border-2 border-bln-dark-third rounded-lg;
+        @apply px-4 py-4 text-bln-white-font border-2 border-bln-dark-third rounded-lg;
         .comment-form{
             @apply flex gap-2 flex-col w-2/3;
             .comment-form-comment{
                 @apply flex flex-col gap-4 py-2 text-base text-bln-white-font;
-                &__input{
-                    @apply bg-bln-dark-secondary px-2 py-2 rounded-md;
-                }
-                &__textarea{
-                    @apply bg-bln-dark-secondary px-2 py-2 outline-none rounded-md;
-                }
             }
         }
         .form-submit{
@@ -24,10 +18,7 @@
 @screen lg{
     .container-single{
         &__comments{
-            @apply w-2/3 flex flex-col gap-2;
-            .comment-form-comment > textarea{
-                @apply w-2/3;
-            }
+            @apply flex flex-col gap-2;
         }
     }
 }
