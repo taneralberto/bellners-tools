@@ -1,6 +1,16 @@
 .container-single{
     &__comments{
         @apply px-4 py-4 text-bln-white-font border-2 border-bln-dark-third rounded-lg;
+        .commentlist{
+            @apply flex flex-col gap-4;
+            .comment{
+                @apply bg-purple-500;
+                .comment-body{
+                    .comment-content{
+                    }
+                }
+            }
+        }
         .comment-form{
             @apply flex gap-2 flex-col w-2/3;
             .comment-form-comment{
