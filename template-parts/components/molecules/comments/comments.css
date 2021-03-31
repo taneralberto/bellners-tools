@@ -4,7 +4,7 @@
         .commentlist{
             @apply flex flex-col gap-4;
             .comment{
-                @apply bg-purple-500;
+                @apply bg-bln-dark-secondary text-bln-gray-font;
                 .comment-body{
                     .comment-content{
                     }
