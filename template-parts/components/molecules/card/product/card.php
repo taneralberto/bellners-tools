@@ -1,7 +1,15 @@
 <div class="product-card">
+
     <div class="product-card__image">
-        <?php Atomic::atom( 'thumbnail', ['size' => 'medium', 'type' => 'product'] ); ?>
+        <div class="product-card__thumbnail">
+            <?php Atomic::atom( 'thumbnail', ['size' => 'medium', 'type' => 'product'] ); ?>
+        </div>
+
+        <div class="product-card__gallery">
+            <?php Atomic::molecule( 'product-gallery', ['size' => 'medium'] ); ?>
+        </div>
     </div>
+
 
     <h1 class="product-card__title">
         <?php Atomic::atom( 'title' ); ?>

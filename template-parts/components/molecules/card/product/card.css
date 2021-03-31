@@ -2,4 +2,8 @@
 
     @apply flex flex-col row-gap-2;
     width: 400px;
+
+    &__image {
+        @apply bg-bln-dark-secondary px-10 py-20 relative flex justify-center items-center;
+    }
 }
