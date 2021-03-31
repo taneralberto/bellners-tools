@@ -9,7 +9,7 @@
                     @apply bg-bln-dark-secondary px-2 py-2 ;
                 }
                 &__textarea{
-                    @apply bg-bln-dark-secondary
+                    @apply bg-bln-dark-secondary px-2 py-2;
                 }
             }
         }
