@@ -1,0 +1,6 @@
+.product-card {
+
+    .prices {
+        @apply h-8 flex col-gap-2;
+    }
+}

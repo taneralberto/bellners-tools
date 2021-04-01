@@ -7,10 +7,4 @@
             @apply text-bln-red cursor-pointer;
         }
     }
-
-    &:hover {
-        .add_to_cart_button {
-            @apply block;
-        }
-    }
 }

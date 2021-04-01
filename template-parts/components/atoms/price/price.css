@@ -1,7 +1,6 @@
 .product-card {
 
-    &__price {
-        @apply block h-8;
+    .price {
 
         &__normal {
             @apply font-bold text-lg text-bln-white-font;
@@ -9,6 +8,10 @@
 
         &__regular {
             @apply font-normal text-lg text-bln-white-font line-through;
+
+            &--not-sale {
+                @apply no-underline font-bold;
+            }
         }
 
         &__sale {
@@ -19,12 +22,4 @@
             @apply font-bold text-lg text-bln-gray-font;
         }
     }
-
-    &:hover {
-
-        .product-card__price {
-            @apply hidden;
-        }
-    }
-
 }
