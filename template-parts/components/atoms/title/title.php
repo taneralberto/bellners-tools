@@ -36,4 +36,11 @@
     }
 }*/
 
-the_title();
+if ( $args['permalink?'] ) {
+
+    the_title( '<a href=' . get_permalink() . '>', '</a>' );
+
+} else {
+
+    the_title();
+}

@@ -2,4 +2,5 @@
 @import './bar-social/bar-social.css';
 @import './card/product/card.css';
 @import './comments/comments.css';
-@import './product-gallery/product-gallery.css';
+@import './gallery/gallery.css';
+@import './prices/prices.css';
