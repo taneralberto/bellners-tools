@@ -1,0 +1,5 @@
+.blog-card{
+    &__date{
+        @apply bg-bln-red text-bln-white-font p-4 w-2/5 font-bold flex justify-center;
+    }
+}

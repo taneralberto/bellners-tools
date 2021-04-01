@@ -1,0 +1,6 @@
+.blog-slider{
+    @apply px-32;
+    &__title{
+        @apply text-3xl font-bold text-bln-white-font;
+    }
+}

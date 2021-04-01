@@ -1,0 +1,11 @@
+.blog-card{
+    &__read-more{
+        @apply text-sm text-bln-gray-font duration-300;
+        &::after{
+            content: "->";
+        }
+        &:hover{
+            @apply text-bln-white-font;
+        }
+    }
+}
