@@ -5,11 +5,14 @@
 
     <div class="blog-card__info">
         <div class="blog-card__title">
-            Soy un titulo
             <?php Atomic::atom( 'title' ); ?>
         </div>
 
-        <div class="blog-card__price">
+        <div class="blog-card__date">
+            <?php Atomic::atom( 'date-public' ); ?>
+        </div>
+        <div class="blog-card__read-more">
+            <?php Atomic::atom( 'read-more' ); ?>
         </div>
     </div>
 </div>
