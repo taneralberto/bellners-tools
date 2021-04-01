@@ -14,3 +14,9 @@
         @apply transition-colors duration-100 text-bln-red;
     }
 }
+
+.blog-card{
+    &__info{
+        @apply text-xl text-bln-white-font;
+    }
+}

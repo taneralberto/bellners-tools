@@ -7,3 +7,7 @@
         @apply bg-bln-dark-secondary px-10 py-20 relative flex justify-center items-center;
     }
 }
+.blog-card{
+    @apply flex flex-col gap-4 p-2;
+    width: 400px;
+}
