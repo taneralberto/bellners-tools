@@ -1,31 +1,56 @@
 .container-single{
     &__comments{
-        @apply px-4 py-4 text-bln-white-font border-2 border-bln-dark-third rounded-lg;
+        @apply w-full px-4 py-4 text-bln-white-font border-2 border-bln-dark-third rounded-lg;
         .commentlist{
             @apply flex flex-col gap-4;
             .comment{
-                @apply bg-bln-dark-secondary text-bln-gray-font px-2 py-2;
+                @apply bg-bln-dark-secondary text-bln-gray-font p-3 rounded-lg duration-100;
+                box-shadow: 2px 2px #bbb;
                 .comment-body{
-                    .comment-content{
+                    .comment-meta{
+                        .comment-author{
+                            @apply text-bln-red;
+                        }
+                        .comment-author > img{
+                            @apply rounded-full;
+                        }
+                        .comment-metadata{
+                            @apply flex justify-end gap-4 text-sm italic text-bln-red;
+                        }
                     }
+                    .comment-content{
+                        @apply text-bln-white-font;
+                    }
+                    .reply{
+                        @apply text-sm py-2 italic text-bln-red;
+                            &::before{
+                                content: " - ";
+                            }
+                    }
+                }
+                &:hover{
+                    @apply transform translate-y-2 translate-x-2;
                 }
             }
         }
         .comment-respond{
-            @apply flex;
+            @apply flex flex-col;
             .comment-form{
-                @apply flex gap-2 flex-col w-2/3;
+                @apply flex gap-2 flex-col py-4;
                 .comment-form-comment{
                     @apply flex flex-col gap-4 py-2 text-base text-bln-white-font;
-                    &__input{
-                        @apply bg-bln-dark-secondary px-2 py-2 ;
-                    }
-                    &__textarea{
-                        @apply bg-bln-dark-secondary
-                    }
                 }
                 .comment-form-comment > textarea{
                     @apply bg-bln-dark-secondary px-4 py-4 outline-none;
+                }
+                .comment-form-author > input{
+                    @apply bg-bln-dark-secondary w-full p-4 rounded-md;
+                }
+                .comment-form-email > input{
+                    @apply bg-bln-dark-secondary w-full p-4 rounded-md;
+                }
+                .comment-form-url > input{
+                    @apply bg-bln-dark-secondary w-full p-4 rounded-md;
                 }
             }
         }
@@ -40,7 +65,7 @@
 @screen lg{
     .container-single{
         &__comments{
-            @apply flex flex-col gap-2;
+            @apply flex flex-col gap-2 w-2/3;
         }
     }
 }

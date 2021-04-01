@@ -1,5 +1,12 @@
 .container-single{
     &__content{
-        @apply px-8 py-8 text-justify;
+        @apply px-2 py-2 text-justify;
+    }
+}
+@screen lg{
+    .container-single{
+        &__content{
+            @apply px-24;
+        }
     }
 }
