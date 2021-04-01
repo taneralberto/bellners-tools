@@ -1,5 +1,15 @@
 .container-single{
     &__content{
-        @apply text-justify;
+        @apply px-2 py-2 text-justify text-bln-white-font;
+    }
+}
+@screen lg{
+    .container-single{
+        &__content{
+            @apply px-24;
+        }
+        &__content > p::selection{
+                @apply bg-bln-dark-primary text-bln-gray-font;
+        }
     }
 }

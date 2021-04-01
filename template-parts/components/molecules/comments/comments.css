@@ -1,8 +1,58 @@
 .container-single{
     &__comments{
-        @apply w-full px-2 py-4 text-bln-white-font border-2 border-bln-dark-third rounded-lg;
-        .comment-form-comment > textarea{
-            @apply w-full px-2 py-2 text-bln-dark-third outline-none rounded-md;
+        @apply w-full px-4 py-4 text-bln-white-font border-2 border-bln-dark-third rounded-lg;
+        .commentlist{
+            @apply flex flex-col gap-4;
+            .comment{
+                @apply bg-bln-dark-secondary text-bln-gray-font p-3 rounded-lg duration-100;
+                box-shadow: 2px 2px #bbb;
+                .comment-body{
+                    .comment-meta{
+                        .comment-author{
+                            @apply text-bln-red;
+                        }
+                        .comment-author > img{
+                            @apply rounded-full;
+                        }
+                        .comment-metadata{
+                            @apply flex justify-end gap-4 text-sm italic text-bln-red;
+                        }
+                    }
+                    .comment-content{
+                        @apply text-bln-white-font;
+                    }
+                    .reply{
+                        @apply text-sm py-2 italic text-bln-red;
+                            &::before{
+                                content: " - ";
+                            }
+                    }
+                }
+                &:hover{
+                    @apply transform translate-y-2 translate-x-2;
+                }
+            }
+        }
+        .comment-respond{
+            @apply flex flex-col;
+            .comment-form{
+                @apply flex gap-2 flex-col py-4;
+                .comment-form-comment{
+                    @apply flex flex-col gap-4 py-2 text-base text-bln-white-font;
+                }
+                .comment-form-comment > textarea{
+                    @apply bg-bln-dark-secondary px-4 py-4 outline-none;
+                }
+                .comment-form-author > input{
+                    @apply bg-bln-dark-secondary w-full p-4 rounded-md;
+                }
+                .comment-form-email > input{
+                    @apply bg-bln-dark-secondary w-full p-4 rounded-md;
+                }
+                .comment-form-url > input{
+                    @apply bg-bln-dark-secondary w-full p-4 rounded-md;
+                }
+            }
         }
         .form-submit{
             @apply text-bln-white-font flex justify-center;
@@ -15,10 +65,7 @@
 @screen lg{
     .container-single{
         &__comments{
-            @apply w-2/3 flex flex-col gap-2;
-            .comment-form-comment > textarea{
-                @apply w-2/3;
-            }
+            @apply flex flex-col gap-2 w-2/3;
         }
     }
 }
