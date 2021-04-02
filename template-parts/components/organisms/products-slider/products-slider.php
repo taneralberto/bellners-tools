@@ -3,8 +3,8 @@
 global $woocommerce;
 
 $args = array(
-    'posts_per_page' => 5,
     'post_type' => 'product',
+    'posts_per_page' => 5,
 );
 
 $query = new WP_Query( $args );
