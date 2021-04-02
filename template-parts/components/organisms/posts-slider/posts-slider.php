@@ -1,7 +1,5 @@
 <?php
 
-global $woocommerce;
-
 $args = array(
     'posts_per_page' => 5,
     'post_type' => 'post',
