@@ -1,0 +1,17 @@
+.info-newsletter{
+    @apply flex flex-col items-center w-full text-center;
+        &__big{
+            @apply text-xl text-bln-white-font;
+        }
+        &__small{
+            @apply text-base text-bln-gray-font;
+        }
+}
+@screen lg{
+    .info-newsletter{
+        @apply w-2/5;
+            &__big{
+                @apply text-3xl;
+            }
+    }
+}

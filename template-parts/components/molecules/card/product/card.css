@@ -21,5 +21,11 @@
 
 .blog-card{
     @apply flex flex-col gap-4 p-2;
+    min-width: 90%;
     width: 400px;
+}
+@screen lg{
+    .blog-card{
+        @apply min-w-0 w-1/3;
+    }
 }

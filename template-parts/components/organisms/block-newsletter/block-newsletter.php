@@ -1,3 +1,4 @@
 <div class="block-newsletter">
-    hola soy el newsletter
+    <?php Atomic::molecule('info-newsletter'); ?>
+    <?php Atomic::molecule('formu-newsletter'); ?>
 </div>
