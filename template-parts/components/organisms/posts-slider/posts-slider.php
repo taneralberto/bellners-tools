@@ -3,7 +3,7 @@
 global $woocommerce;
 
 $args = array(
-    'posts_per_page' => 5,
+    'posts_per_page' => 4,
     'post_type' => 'post',
 );
 
@@ -11,10 +11,10 @@ $query = new WP_Query( $args );
 
 if ( $query->have_posts() ) {
 ?>
+<div class="title-block">
+    Latest Blog
+</div>
     <div class="blog-slider">
-        <div class="blog-slider__title">
-            Latest Blog
-        </div>
         <?php
             while ( $query->have_posts() ) {
                 $query->the_post();
