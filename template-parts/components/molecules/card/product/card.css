@@ -1,10 +1,9 @@
 .product-card {
-    @apply flex flex-col row-gap-2 ;
-    width: 400px;
+    @apply flex flex-col row-gap-2 snap-start;
+    min-width: 100%;
 
     &__image {
         @apply bg-bln-dark-secondary px-10 py-20 flex justify-center items-center;
-        width: 300px;
         height: 400px;
     }
 
@@ -14,11 +13,12 @@
             @apply hidden;
         }
 
-        .add_to_cart_button {
+        .product-card__add-to-cart {
             @apply block;
         }
     }
 }
+
 .blog-card{
     @apply flex flex-col gap-4 p-2;
     min-width: 90%;

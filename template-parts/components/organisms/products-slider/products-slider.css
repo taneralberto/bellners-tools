@@ -1,4 +1,4 @@
 .products-slider {
 
-    @apply flex col-gap-12 px-32;
+    @apply flex col-gap-4 mx-4 overflow-x-scroll snap snap-x snap-proximity;
 }
