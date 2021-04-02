@@ -1,0 +1,12 @@
+.testimonials{
+    @apply flex flex-row overflow-scroll;
+    max-width:100%;
+}
+@screen lg{
+    .testimonials{
+        @apply w-full max-w-none p-6;
+    }
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}

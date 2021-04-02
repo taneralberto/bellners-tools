@@ -1,0 +1,14 @@
+.testimonials{
+    &__card{
+        @apply border border-bln-dark-third rounded-md;
+        min-width:90%;
+    }
+}
+
+@screen lg{
+    .testimonials{
+        &__card{
+            @apply w-1/3 min-w-0;
+        }
+    }
+}

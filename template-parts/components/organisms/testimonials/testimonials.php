@@ -12,7 +12,7 @@ if ( $query->have_posts() ) {
 <div class="title-block">
     What Our Client's Say
 </div>
-    <div class="block-testimonials">
+    <div class="testimonials">
         <?php
             while ( $query->have_posts() ) {
                 $query->the_post();
