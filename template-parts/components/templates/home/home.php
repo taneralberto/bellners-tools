@@ -4,5 +4,6 @@
         Atomic::organism( 'testimonials' );
         Atomic::organism( 'block-newsletter' );
         Atomic::organism( 'posts-slider' );
+        Atomic::organism( 'our-clients' );
     ?>
 </div>
