@@ -1,10 +1,10 @@
 .testimonials{
-    @apply flex flex-row overflow-scroll;
+    @apply flex flex-row w-11/12 overflow-scroll gap-1 pt-12 px-5;
     max-width:100%;
 }
 @screen lg{
     .testimonials{
-        @apply w-full max-w-none p-6;
+        @apply w-full py-12 max-w-none gap-6;
     }
     ::-webkit-scrollbar {
         display: none;

@@ -1,9 +1,10 @@
 <div class="testimonials__card">
-    <img class="testimonials__card__img" src= "<?php Atomic::atom( 'thumbnail', ['size' => 'thumbnail'] ); ?>">
+    <?php Atomic::atom( 'thumbnail', ['size' => 'thumbnail', 'class' => "testimonials__card__img"] ); ?>
     <div class="testimonials__card__caption">
         <?php Atomic::atom('caption'); ?>
     </div>
-    <div class="testimonials__card__content">
-        <?php Atomic::atom('single-content'); ?>
+    <img src="https://i.postimg.cc/d10Vjmyx/left-quotes-sign.png" alt="Quote">
+    <div class="testimonials__card__excerpt">
+        <?php Atomic::atom('excerpt'); ?>
     </div>
 </div>

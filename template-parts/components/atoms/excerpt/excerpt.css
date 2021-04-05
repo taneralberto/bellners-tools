@@ -1,0 +1,15 @@
+.testimonials{
+    &__card{
+        &__excerpt > p{
+            @apply text-bln-gray-font;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 5;
+            line-clamp: 5;
+            overflow: hidden;
+        }
+        &__excerpt > p::selection{
+            @apply bg-bln-dark-secondary text-bln-gray-font;
+        }
+    }
+}
