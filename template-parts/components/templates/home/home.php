@@ -6,5 +6,6 @@
         Atomic::organism( 'block-newsletter' );
         Atomic::organism( 'posts-slider' );
         Atomic::organism( 'our-clients' );
+        Atomic::organism( 'list-cat' );
     ?>
 </div>
