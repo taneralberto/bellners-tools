@@ -2,15 +2,25 @@
     @apply w-full flex justify-center items-center flex-col text-bln-white-font;
     height:500px;
         &__strong{
-            @apply text-6xl font-bold;
-            &::selection{
-                @apply bg-bln-dark-primary text-bln-gray-font;
-            }
+            @apply text-2xl font-bold;
         }
         &__thin{
-            @apply text-4xl;
-            &::selection{
-                @apply bg-bln-dark-primary text-bln-gray-font;
-            }
+            @apply text-xl text-center;
         }
+}
+@screen lg{
+    .info-parallax{
+        &__strong{
+            @apply text-6xl;
+                &::selection{
+                    @apply bg-bln-dark-primary text-bln-gray-font;
+                }
+            }
+            &__thin{
+                @apply text-4xl;
+                &::selection{
+                    @apply bg-bln-dark-primary text-bln-gray-font;
+                }
+            }
+    }
 }
