@@ -9,3 +9,8 @@ if ( $args['type'] === 'product' ) {
     Atomic::common( 'molecules/card/blog/card' );
 
 }
+else if ( $args['type'] === 'testimonials' ) {
+
+    Atomic::common( 'molecules/card/testimonials/card' );
+
+}

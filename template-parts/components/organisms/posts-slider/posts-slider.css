@@ -2,6 +2,3 @@
     @apply flex flex-row overflow-scroll;
     min-width: 90%;
 }
-.title-block{
-    @apply text-3xl font-bold text-bln-white-font;
-}

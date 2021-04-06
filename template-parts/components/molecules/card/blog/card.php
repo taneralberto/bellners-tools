@@ -1,6 +1,6 @@
 <div class="blog-card">
     <div class="blog-card__image">
-        <?php Atomic::atom( 'thumbnail', ['size' => 'medium'] ); ?>
+        <?php Atomic::atom( 'thumbnail', ['size' => 'large'] ); ?>
     </div>
     <div class="blog-card__date">
         <?php Atomic::atom( 'date-public' ); ?>

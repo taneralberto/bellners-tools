@@ -1,0 +1,17 @@
+.testimonials{
+    &__card{
+        @apply snap-start border border-bln-red rounded-md flex flex-col justify-center items-center py-4 text-center text-bln-gray-font;
+        min-width:90%;
+    }
+}
+
+@screen lg{
+    .testimonials{
+        &__card{
+            @apply w-1/3 min-w-0 transform duration-700 cursor-pointer;
+            &:hover{
+                @apply animate-pulse translate-x-2 translate-y-2;
+            }
+        }
+    }
+}
