@@ -23,8 +23,8 @@ if ( $query->have_posts() ) {
 
                 //$product = wc_get_product( $id );
 
+                Atomic::molecule( 'card', ['type' => 'product'] );
             }
-            Atomic::molecule( 'card', ['type' => 'product'] );
         ?>
 
     </div>

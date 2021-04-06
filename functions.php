@@ -144,15 +144,16 @@ function bellner_tools_scripts() {
 	//wp_style_add_data( 'bellner-tools-style', 'rtl', 'replace' );
 
 	//wp_enqueue_script( 'bellner-tools-navigation', get_template_directory_uri() . '/js/navigation.js', array(), _S_VERSION, true );
+	wp_enqueue_script( 'bellner-script', get_template_directory_uri() . '/dist/js/index.js', array(), '1.0.0', true );
+
+	wp_enqueue_style( 'bellner-tools-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0' );
+	wp_enqueue_style('monserrat_google_fonts', "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap");
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'bellner_tools_scripts' );
-
-wp_enqueue_style( 'bellner-tools-style', get_template_directory_uri() . '/dist/css/style.css', array(), '1.0.0' );
-wp_enqueue_style('monserrat_google_fonts', "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;1,700&display=swap");
 
 /**
  * Implement the Custom Header feature.
