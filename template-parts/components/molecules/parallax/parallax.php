@@ -1,5 +1,5 @@
 <div class="container-parallax">
 	<div class="parallax">
-        <? Atomic::atom('info-parallax'); ?>
+        <? Atomic::molecule('info-parallax'); ?>
     </div>
 </div>
