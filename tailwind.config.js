@@ -8,6 +8,7 @@ module.exports = {
   ],
   theme: {
     extend: {
+
       colors:{
         'bln-dark-primary' : 'hsl(0, 0%, 7%)',
         'bln-dark-secondary' : 'hsl(0, 0%, 15%)',
@@ -15,7 +16,11 @@ module.exports = {
         'bln-red' : 'hsl(7, 100%, 55%)',
         'bln-gray-font' : 'hsl(0, 0%, 49%)',
         'bln-white-font' : 'hsl(0, 0%, 100%)',
-      }
+      },
+
+      screens: {
+        'xs' : '475px'
+      },
     },
   },
   variants: {},

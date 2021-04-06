@@ -1,7 +1,7 @@
 .product-card {
 
     .add_to_cart_button {
-        @apply text-sm font-bold text-bln-white-font h-8 hidden;
+        @apply text-sm font-bold text-bln-white-font h-8;
 
         &:hover {
             @apply text-bln-red cursor-pointer;

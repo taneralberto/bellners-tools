@@ -2,3 +2,9 @@
 
     @apply flex col-gap-4 mx-4 overflow-x-scroll snap snap-x snap-proximity;
 }
+
+@screen xl {
+    .products-slider {
+        @apply mx-32;
+    }
+}

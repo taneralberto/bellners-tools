@@ -81,31 +81,56 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/index.ts");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/index.js":
+/***/ "./src/js/index.ts":
 /*!*************************!*\
-  !*** ./src/js/index.js ***!
+  !*** ./src/js/index.ts ***!
   \*************************/
-/*! no exports provided */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _template_parts_components_atoms_atoms__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../template-parts/components/atoms/atoms */ \"./template-parts/components/atoms/atoms.js\");\n/* harmony import */ var _template_parts_components_atoms_atoms__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_template_parts_components_atoms_atoms__WEBPACK_IMPORTED_MODULE_0__);\n\n\n//# sourceURL=webpack:///./src/js/index.js?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! ../../template-parts/components/atoms/atoms */ \"./template-parts/components/atoms/atoms.ts\");\n__webpack_require__(/*! ../../template-parts/components/molecules/molecules */ \"./template-parts/components/molecules/molecules.ts\");\n\n\n//# sourceURL=webpack:///./src/js/index.ts?");
 
 /***/ }),
 
-/***/ "./template-parts/components/atoms/atoms.js":
+/***/ "./template-parts/components/atoms/atoms.ts":
 /*!**************************************************!*\
-  !*** ./template-parts/components/atoms/atoms.js ***!
+  !*** ./template-parts/components/atoms/atoms.ts ***!
   \**************************************************/
 /*! no static exports found */
-/***/ (function(module, exports) {
+/***/ (function(module, exports, __webpack_require__) {
 
-eval("\n\n//# sourceURL=webpack:///./template-parts/components/atoms/atoms.js?");
+"use strict";
+eval("\n\n\n//# sourceURL=webpack:///./template-parts/components/atoms/atoms.ts?");
+
+/***/ }),
+
+/***/ "./template-parts/components/molecules/gallery/gallery.ts":
+/*!****************************************************************!*\
+  !*** ./template-parts/components/molecules/gallery/gallery.ts ***!
+  \****************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nconst $$divs = [...document.querySelectorAll('.product-card__image')];\n$$divs.map($div => {\n    console.log($div);\n});\n\n\n//# sourceURL=webpack:///./template-parts/components/molecules/gallery/gallery.ts?");
+
+/***/ }),
+
+/***/ "./template-parts/components/molecules/molecules.ts":
+/*!**********************************************************!*\
+  !*** ./template-parts/components/molecules/molecules.ts ***!
+  \**********************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! ./gallery/gallery */ \"./template-parts/components/molecules/gallery/gallery.ts\");\n\n\n//# sourceURL=webpack:///./template-parts/components/molecules/molecules.ts?");
 
 /***/ })
 
