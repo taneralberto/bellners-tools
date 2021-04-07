@@ -19,6 +19,3 @@
             }
     }
 }
-.testimonials__card__img{
-    @apply rounded-full -mt-16 w-24;
-}

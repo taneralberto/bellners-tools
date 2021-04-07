@@ -1,0 +1,20 @@
+.list-cat{
+    @apply w-full flex justify-center items-center px-4 py-8;
+    .woocommerce{
+        .products{
+            @apply flex justify-center gap-4;
+                .product-category{
+                    @apply w-32 text-sm text-bln-white-font border-2 border-bln-dark-secondary duration-300 transform;
+                    &:hover{
+                        @apply rounded-2xl border-2 border-bln-red text-bln-red translate-x-1 translate-y-1;
+                    }
+                }
+                .product-category > a{
+                    @apply flex flex-col gap-2 p-2 items-center;
+                }
+                .product-category > a > img{
+                    @apply w-16;
+                }
+        }
+    }
+}
