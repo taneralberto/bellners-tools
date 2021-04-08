@@ -1,30 +1,11 @@
-<?php
-/**
- * The template for displaying all pages
- *
- * This is the template that displays all pages by default.
- * Please note that this is the WordPress construct of pages
- * and that other 'pages' on your WordPress site may use a
- * different template.
- *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
- * @package bellner-tools
- */
-
-get_header();
-?>
-
+<?php get_header(); ?>
 	<main id="primary" class="site-main">
-
 		<?php
-		while ( have_posts() ) :
-			the_post();
-				Atomic::template('cart');
-		endwhile;
+			while ( have_posts() ) :
+				the_post();
+					Atomic::template('cart');
+			endwhile;
 		?>
 
 	</main>
-
-<?php
-get_footer();
+<?php get_footer();
