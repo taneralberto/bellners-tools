@@ -1,0 +1,3 @@
+.next-button, .prev-button {
+    @apply p-6 bg-bln-dark-secondary;
+}

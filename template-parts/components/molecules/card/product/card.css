@@ -1,5 +1,5 @@
 .product-card {
-    @apply flex flex-col row-gap-2 snap-start;
+    @apply flex flex-col row-gap-2 px-6 snap-start;
     min-width: 100%;
 
     &__image {

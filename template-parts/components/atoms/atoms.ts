@@ -1,0 +1,1 @@
+import './next-prev-button/next-prev-button';

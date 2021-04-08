@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! ../../template-parts/components/atoms/atoms */ \"./template-parts/components/atoms/atoms.ts\");\n__webpack_require__(/*! ../../template-parts/components/molecules/molecules */ \"./template-parts/components/molecules/molecules.ts\");\n\n\n//# sourceURL=webpack:///./src/js/index.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! ../../template-parts/components/atoms/atoms */ \"./template-parts/components/atoms/atoms.ts\");\n// import '../../template-parts/components/molecules/molecules';\n// import '../../template-parts/components/organisms/organisms';\n// import '../../template-parts/components/templates/templates';\n/*export * from '../../template-parts/components/atoms/atoms';\nexport * from '../../template-parts/components/molecules/molecules';*/ \n\n\n//# sourceURL=webpack:///./src/js/index.ts?");
 
 /***/ }),
 
@@ -106,31 +106,19 @@ eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webp
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\n\n\n//# sourceURL=webpack:///./template-parts/components/atoms/atoms.ts?");
+eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! ./next-prev-button/next-prev-button */ \"./template-parts/components/atoms/next-prev-button/next-prev-button.ts\");\n\n\n//# sourceURL=webpack:///./template-parts/components/atoms/atoms.ts?");
 
 /***/ }),
 
-/***/ "./template-parts/components/molecules/gallery/gallery.ts":
-/*!****************************************************************!*\
-  !*** ./template-parts/components/molecules/gallery/gallery.ts ***!
-  \****************************************************************/
+/***/ "./template-parts/components/atoms/next-prev-button/next-prev-button.ts":
+/*!******************************************************************************!*\
+  !*** ./template-parts/components/atoms/next-prev-button/next-prev-button.ts ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nconst $$divs = [...document.querySelectorAll('.product-card__image')];\n$$divs.map($div => {\n    console.log($div);\n});\n\n\n//# sourceURL=webpack:///./template-parts/components/molecules/gallery/gallery.ts?");
-
-/***/ }),
-
-/***/ "./template-parts/components/molecules/molecules.ts":
-/*!**********************************************************!*\
-  !*** ./template-parts/components/molecules/molecules.ts ***!
-  \**********************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-eval("\nObject.defineProperty(exports, \"__esModule\", { value: true });\n__webpack_require__(/*! ./gallery/gallery */ \"./template-parts/components/molecules/gallery/gallery.ts\");\n\n\n//# sourceURL=webpack:///./template-parts/components/molecules/molecules.ts?");
+eval("\nfunction nextPrevButtons() {\n    const $nextButton = document.querySelector('.next-button');\n    const $prevButton = document.querySelector('.prev-button');\n    const $productsSlider = document.querySelector('.products-slider');\n    if ($productsSlider) {\n        const $productCard = $productsSlider.querySelector('.product-card');\n        let translate = 0;\n        let width = $productCard === null || $productCard === void 0 ? void 0 : $productCard.offsetWidth;\n        if ($nextButton) {\n            $nextButton.onclick = () => {\n                if (width) {\n                    translate -= width;\n                    if (translate < -1299) {\n                        translate = 0;\n                    }\n                }\n                if ($productsSlider) {\n                    $productsSlider.style.transform = `translateX(${translate}px)`;\n                }\n            };\n        }\n        if ($prevButton) {\n            $prevButton.onclick = () => {\n                if (width) {\n                    translate += width;\n                }\n                if ($productsSlider) {\n                    $productsSlider.style.transform = `translateX(${translate}px)`;\n                }\n            };\n        }\n    }\n}\nnextPrevButtons();\nwindow.addEventListener('resize', nextPrevButtons);\n\n\n//# sourceURL=webpack:///./template-parts/components/atoms/next-prev-button/next-prev-button.ts?");
 
 /***/ })
 

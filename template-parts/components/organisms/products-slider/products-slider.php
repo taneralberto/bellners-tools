@@ -12,9 +12,14 @@ $query = new WP_Query( $args );
 if ( $query->have_posts() ) {
 
 ?>
+<div class="products-section">
+
+    <div class="next-prev-buttons">
+        <?= Atomic::atom( 'next-prev-button', ['type' => 'prev'] ); ?>
+        <?= Atomic::atom( 'next-prev-button', ['type' => 'next'] ); ?>
+    </div>
 
     <div class="products-slider">
-
 
         <?php
 
@@ -24,9 +29,10 @@ if ( $query->have_posts() ) {
                 //$product = wc_get_product( $id );
 
                 Atomic::molecule( 'card', ['type' => 'product'] );
+
             }
         ?>
-
     </div>
+</div>
 <?php } ?>
 
