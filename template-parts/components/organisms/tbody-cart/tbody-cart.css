@@ -1,0 +1,12 @@
+.body-table{
+    @apply flex flex-col gap-4;
+    .total{
+        @apply flex flex-col;
+    }
+}
+.woocommerce-cart-form__cart-item{
+    @apply flex flex-col gap-3 p-2 border-2 border-bln-dark-third items-center text-bln-white-font;
+    .product-remove{
+        @apply w-full;
+    }
+}
