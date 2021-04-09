@@ -16,7 +16,7 @@
                                 'woocommerce_cart_item_remove_link',
                                 sprintf(
                                     '<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">
-                                    <img src="https://i.postimg.cc/JzHhSVrt/trash-bin.png" alt="">
+                                    <img src="https://i.postimg.cc/CLqW6tcL/trash-bin-1.png" alt="">
                                     </a>',
                                     esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
                                     esc_html__( 'Remove this item', 'woocommerce' ),
