@@ -197,3 +197,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
 }
+
+
+/* Quita el contador de productos en las categorías */
+add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_count' );
+
+function woo_remove_category_products_count() {
+	return;
+}

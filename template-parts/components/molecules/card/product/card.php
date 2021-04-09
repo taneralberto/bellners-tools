@@ -18,7 +18,7 @@
     </div>
 
     <div>
-        <?= Atomic::atom( 'star-rating' ); ?>
+        <!--<?= Atomic::atom( 'star-rating' ); ?>-->
     </div>
 
 </div>

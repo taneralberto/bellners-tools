@@ -8,7 +8,7 @@
 }
 
 @screen xl {
-    .products-slider {
+    .products-section {
         @apply mx-32;
     }
 }

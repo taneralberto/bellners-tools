@@ -1,50 +1,71 @@
 function nextPrevButtons() {
 
+    const $productsSlider : HTMLElement | null = document.querySelector( '.products-slider' );
     const $nextButton : HTMLElement | null = document.querySelector( '.next-button' );
     const $prevButton : HTMLElement | null = document.querySelector( '.prev-button' );
-    const $productsSlider : HTMLElement | null = document.querySelector( '.products-slider' );
+
+    let $$products : NodeListOf<Element> = document.querySelectorAll( '.product-card' );
+    let index : number = 1;
+
+    const $firstClone : HTMLElement = <HTMLElement> $$products[0].cloneNode( true );
+    const $lastClone : HTMLElement = <HTMLElement> $$products[ $$products.length - 1 ].cloneNode( true );
+
+    $firstClone.id = 'first-clone';
+    $lastClone.id = 'last-clone';
+
+    $productsSlider?.append( $firstClone );
+    $productsSlider?.prepend( $lastClone );
+
+    const productsTotalCount : number | undefined = $productsSlider?.childElementCount;
+
+    const productWidth : number = $$products[index].clientWidth;
 
     if( $productsSlider ) {
 
-        const $productCard : any = $productsSlider.querySelector('.product-card');
-        let translate : number = 0;
-        let width : number | undefined = $productCard?.offsetWidth;
+        $productsSlider.style.transform = `translateX(${-productWidth * index}px)`;
 
-        if ( $nextButton ) {
+        const getProducts = () => document.querySelectorAll( '.product-card' );
 
-            $nextButton.onclick = () => {
+        $productsSlider.addEventListener( 'transitionend', () => {
+            $$products = getProducts();
 
-                if ( width ) {
-                    translate -= width;
+            if( $$products[index].id === $firstClone.id ) {
+            //if( $$products[index] === $$products[4] ) {
+                console.log($$products[index]);
+                $productsSlider.style.transition = 'none';
+                index = 1;
+                $productsSlider.style.transform = `translateX(${-productWidth * index}px)`;
+            }
 
-                    if ( translate < -1299 ) {
-                        translate = 0;
-                    }
-                }
+            if( $$products[index].id === $lastClone.id ) {
+            //if( $$products[index] === $$products[4] ) {
+                console.log($$products[index]);
+                $productsSlider.style.transition = 'none';
+                index = $$products.length - 2;
+                $productsSlider.style.transform = `translateX(${-productWidth * index}px)`;
+            }
+        } );
 
-                if ( $productsSlider ) {
-                    $productsSlider.style.transform = `translateX(${translate}px)`;
-                }
-
-            };
+        const moveToNextProduct = () => {
+            $$products = getProducts();
+            if( index >= $$products.length - 1 ) return;
+            //if( index >= $$products.length - 1 ) return;
+            index++;
+            $productsSlider.style.transition = '150ms ease-out';
+            $productsSlider.style.transform = `translateX(${-productWidth * index}px)`;
         }
 
-        if ( $prevButton ) {
-
-            $prevButton.onclick = () => {
-
-                if ( width ) {
-                    translate += width;
-                }
-
-                if ( $productsSlider ) {
-                    $productsSlider.style.transform = `translateX(${translate}px)`;
-                }
-
-            };
+        const moveToPrevProduct = () => {
+            if( index <= 0 ) return;
+            index--;
+            $productsSlider.style.transition = '150ms ease-out';
+            $productsSlider.style.transform = `translateX(${-productWidth * index}px)`;
         }
+
+        $nextButton?.addEventListener( 'click', moveToNextProduct );
+        $prevButton?.addEventListener( 'click', moveToPrevProduct );
     }
+
 }
 
 nextPrevButtons();
-window.addEventListener( 'resize', nextPrevButtons );
