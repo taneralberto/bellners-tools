@@ -1,0 +1,9 @@
+.head-table{
+    @apply flex gap-2 text-bln-gray-font p-4;
+    &__tr{
+        @apply flex flex-row gap-2 items-center;
+    }
+    &__th{
+        @apply border-r-2 border-b-2 border-bln-white-font pr-2;
+    }
+}

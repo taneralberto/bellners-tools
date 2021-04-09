@@ -1,0 +1,35 @@
+.body-table{
+    @apply flex flex-col gap-4;
+    .total{
+        @apply flex flex-col;
+    }
+}
+.woocommerce-cart-form__cart-item{
+    @apply flex flex-col gap-3 p-2 border border-bln-dark-third bg-bln-dark-secondary items-center text-bln-white-font;
+    .product-remove{
+        @apply w-full;
+    }
+    .product-name{
+        @apply text-lg italic;
+    }
+    .product-price{
+        @apply w-full;
+    }
+    .product-quantity{
+        @apply flex justify-end w-full;
+        .quantity{
+            @apply w-1/3;
+            .input-text{
+                @apply outline-none bg-transparent border border-white p-2 rounded-md w-full;
+            }
+        }
+    }
+    .product-subtotal{
+        @apply w-full flex justify-end text-bln-red;
+    }
+}
+.woocommerce-Price-amount{
+    bdi{
+        @apply flex gap-3
+    }
+}
