@@ -2,7 +2,7 @@
     @apply bg-bln-dark-secondary p-4 flex flex-wrap items-center col-gap-4;
 
     &__hamburger {
-        @apply mr-auto;
+        @apply mr-auto; 
     }
 
     &__form-search {
