@@ -1,10 +1,12 @@
 @import './title/title.css';
 @import './tags/tags.css';
 @import './single-content/single-content.css';
-@import './add-to-cart/add-to-cart.css';
+@import './button-add-to-cart/button-add-to-cart.css';
 @import './price/price.css';
 @import './read-more/read-more.css';
 @import './date-public/date-public.css';
 @import './excerpt/excerpt.css';
 @import './next-prev-button/next-prev-button.css';
 @import './shop-now/shop-now.css';
+@import './hamburger/hamburger.css';
+@import './input-search/input-search.css';

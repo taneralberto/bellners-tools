@@ -1,0 +1,28 @@
+.hamburger {
+    @apply cursor-pointer;
+
+    &__line {
+        @apply w-6 h-1 m-1 bg-bln-dark-third;
+        transition: all 0.3s ease;
+    }
+
+    &.toggle {
+
+        .hamburger__line {
+            @apply ;
+
+            &--line-1 {
+                transform: rotate(-45deg) translate(-5px,6px);
+            }
+
+            &--line-2 {
+                transition: all 0.7s ease;
+                width:0;
+            }
+
+            &--line-3 {
+                transform: rotate(45deg) translate(-5px,-6px);
+            }
+        }
+    }
+}

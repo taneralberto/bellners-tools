@@ -14,7 +14,7 @@
     </div>
 
     <div class="product-card__add-to-cart">
-        <?= Atomic::atom( 'add-to-cart' ); ?>
+        <?= Atomic::atom( 'button-add-to-cart' ); ?>
     </div>
 
     <div>

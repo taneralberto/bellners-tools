@@ -1,0 +1,7 @@
+.form-search {
+    @apply relative;
+
+    &__submit {
+        @apply absolute right-0 top-0 mr-4 mt-2;
+    }
+}

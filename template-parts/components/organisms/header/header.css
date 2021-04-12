@@ -1,0 +1,32 @@
+.header {
+    @apply bg-bln-dark-secondary p-4 flex flex-wrap items-center col-gap-4;
+
+    &__hamburger {
+        @apply mr-auto;
+    }
+
+    &__form-search {
+        @apply w-40;
+    }
+
+    &__menu {
+        @apply hidden;
+    }
+
+    &__button-user {
+        @apply w-8 h-12 bg-red-600;
+    }
+
+    &__link-cart {
+        @apply w-8 h-12 bg-green-800;
+    }
+}
+
+@screen xs {
+    .header {
+
+        &__site-branding {
+            @apply order-2;
+        }
+    }
+}

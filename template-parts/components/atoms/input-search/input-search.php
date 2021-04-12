@@ -1,0 +1,1 @@
+<input type="search" class="input-search" name="s" placeholder="Search..." value="<?= get_search_query(); ?>" title="Search" />
