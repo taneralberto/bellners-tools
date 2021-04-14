@@ -1,0 +1,7 @@
+.site-branding {
+    @apply flex items-center;
+
+    &__logo {
+        @apply w-16;
+    }
+}

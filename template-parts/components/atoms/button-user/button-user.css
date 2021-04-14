@@ -1,0 +1,6 @@
+.button-user {
+
+    &__icon {
+        @apply w-8;
+    }
+}

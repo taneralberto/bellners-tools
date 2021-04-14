@@ -21,6 +21,6 @@
     </div>
 
     <div class="header__menu">
-        <?= Atomic::molecule( 'menu' ); ?>
+        <?= Atomic::molecule( 'primary-menu' ); ?>
     </div>
 </header><!-- #masthead -->

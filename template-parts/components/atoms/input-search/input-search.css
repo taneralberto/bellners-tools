@@ -1,3 +1,3 @@
 .input-search {
-    @apply p-2 border border-bln-dark-third text-bln-dark-third bg-transparent w-full;
+    @apply p-2 border border-bln-dark-third text-bln-dark-third bg-transparent w-full outline-none;
 }

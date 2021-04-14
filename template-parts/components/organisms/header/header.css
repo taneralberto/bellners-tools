@@ -1,32 +1,66 @@
 .header {
-    @apply bg-bln-dark-secondary p-4 flex flex-wrap items-center col-gap-4;
+    @apply bg-bln-dark-secondary p-4 flex flex-wrap items-center justify-center col-gap-4 row-gap-4;
 
     &__hamburger {
-        @apply mr-auto; 
+        @apply mr-auto order-1;
     }
 
     &__form-search {
-        @apply w-40;
-    }
-
-    &__menu {
-        @apply hidden;
+        @apply order-2;
+        width: clamp(10rem, 50vw, 15rem);
     }
 
     &__button-user {
-        @apply w-8 h-12 bg-red-600;
+        @apply order-3;
     }
 
     &__link-cart {
-        @apply w-8 h-12 bg-green-800;
+        @apply order-4;
+    }
+
+    &__site-branding {
+        @apply order-5;
+    }
+
+    &__menu {
+        @apply hidden order-6;
     }
 }
 
-@screen xs {
+@screen sm {
     .header {
 
+        &__hamburger {
+            @apply mr-0;
+        }
+
         &__site-branding {
-            @apply order-2;
+            @apply order-1 mr-auto;
+        }
+    }
+}
+
+@screen lg {
+    .header {
+
+        &__hamburger {
+            @apply hidden;
+        }
+
+        &__button-user {
+            @apply order-4;
+        }
+
+        &__link-cart {
+            @apply order-3;
+        }
+
+        &__site-branding {
+            @apply mr-0;
+        }
+
+        &__menu {
+            @apply block order-1 mr-auto;
         }
     }
 }

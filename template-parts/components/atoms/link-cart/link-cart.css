@@ -1,0 +1,11 @@
+.link-cart {
+    @apply relative;
+
+    &__icon {
+        @apply w-8;
+    }
+
+    &__count {
+        @apply bg-bln-dark-third text-bln-white-font rounded-full p-1 text-xs font-bold absolute top-0;
+    }
+}

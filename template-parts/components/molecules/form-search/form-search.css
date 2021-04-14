@@ -1,7 +1,7 @@
 .form-search {
-    @apply relative;
+    @apply flex;
 
     &__submit {
-        @apply absolute right-0 top-0 mr-4 mt-2;
+        @apply -ml-10 flex;
     }
 }

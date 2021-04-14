@@ -1,0 +1,10 @@
+.primary-menu {
+
+    & > ul {
+        @apply flex col-gap-4 text-bln-gray-font font-bold;
+
+        & > li:hover {
+            @apply text-bln-red;
+        }
+    }
+}
