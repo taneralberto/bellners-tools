@@ -1,5 +1,5 @@
 .body-table{
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-4 py-8;
     .total{
         @apply flex flex-col;
     }
@@ -31,5 +31,10 @@
 .woocommerce-Price-amount{
     bdi{
         @apply flex gap-3
+    }
+}
+@screen lg{
+    .body-table{
+        @apply flex-row flex-wrap justify-center;
     }
 }
