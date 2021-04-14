@@ -1,0 +1,7 @@
+.site-title {
+    @apply text-4xl text-gray-100 font-extrabold tracking-tighter;
+
+    &__colored {
+        @apply text-red-700;
+    }
+}
