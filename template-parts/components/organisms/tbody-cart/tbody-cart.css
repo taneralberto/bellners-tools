@@ -1,5 +1,5 @@
 .body-table{
-    @apply flex flex-col gap-4 py-8;
+    @apply flex flex-col gap-4 py-8 justify-center;
     .total{
         @apply flex flex-col;
     }
@@ -35,6 +35,6 @@
 }
 @screen lg{
     .body-table{
-        @apply flex-row flex-wrap justify-center;
+        @apply flex-row flex-wrap;
     }
 }

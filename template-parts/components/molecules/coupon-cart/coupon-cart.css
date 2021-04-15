@@ -3,16 +3,22 @@
     &__td{
         @apply p-2;
         &__coupon{
-            @apply flex flex-col gap-6 border-b-4 border-dotted border-bln-gray-font py-4 justify-center;
+            @apply flex flex-col gap-6 border-b-4 border-dotted border-bln-gray-font py-4 my-4 justify-center;
             &__label{
                 @apply justify-center text-bln-red flex text-lg;
             }
         }
         .button{
-            @apply w-full text-base flex justify-center border-bln-red border-2 my-2 rounded-md p-2;
+            @apply w-full text-base flex justify-center border-bln-red border-2 my-2 rounded-md p-2 transition duration-700;
+            &:hover{
+                @apply bg-bln-red
+            }
         }
         .button-gray{
-            @apply w-full justify-end border-2 border-bln-gray-font;
+            @apply w-full justify-end bg-bln-gray-font text-bln-white-font p-2 rounded-sm transition duration-700;
+            &:hover{
+                @apply bg-transparent border-bln-gray-font border;
+            }
         }
 
         .input-text{
