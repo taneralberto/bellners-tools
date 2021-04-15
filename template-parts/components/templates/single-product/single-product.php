@@ -16,3 +16,4 @@ Atomic::atom('stock');
 Atomic::atom('title');
 Atomic::atom('up-sells');
 Atomic::molecule('tabs');
+Atomic::molecule('add-to-cart');
