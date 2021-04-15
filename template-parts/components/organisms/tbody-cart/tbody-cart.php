@@ -16,7 +16,7 @@
                                 'woocommerce_cart_item_remove_link',
                                 sprintf(
                                     '<a href="%s" class="remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">
-                                    <img src="https://i.postimg.cc/CLqW6tcL/trash-bin-1.png" alt="">
+                                    <img src="https://i.postimg.cc/N0bQ4ycB/trash.png" alt="">
                                     </a>',
                                     esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
                                     esc_html__( 'Remove this item', 'woocommerce' ),
@@ -100,23 +100,8 @@
         ?>
 
         <?php do_action( 'woocommerce_cart_contents' ); ?>
-
         <tr class="total">
-            <td colspan="6" class="actions">
-
-                <?php if ( wc_coupons_enabled() ) { ?>
-                    <div class="coupon">
-                        <label for="coupon_code"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> <input type="text" name="coupon_code" class="input-text" id="coupon_code" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> <button type="submit" class="button" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>"><?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?></button>
-                        <?php do_action( 'woocommerce_cart_coupon' ); ?>
-                    </div>
-                <?php } ?>
-
-                <button type="submit" class="button" name="update_cart" value="<?php esc_attr_e( 'Update cart', 'woocommerce' ); ?>"><?php esc_html_e( 'Update cart', 'woocommerce' ); ?></button>
-
-                <?php do_action( 'woocommerce_cart_actions' ); ?>
-
-                <?php wp_nonce_field( 'woocommerce-cart', 'woocommerce-cart-nonce' ); ?>
-            </td>
+            <?php Atomic::molecule('coupon-cart') ?>
         </tr>
 
         <?php do_action( 'woocommerce_after_cart_contents' ); ?>

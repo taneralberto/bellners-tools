@@ -1,5 +1,5 @@
 .body-table{
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-4 py-8 justify-center;
     .total{
         @apply flex flex-col;
     }
@@ -8,6 +8,12 @@
     @apply flex flex-col gap-3 p-2 border border-bln-dark-third bg-bln-dark-secondary items-center text-bln-white-font;
     .product-remove{
         @apply w-full;
+    }
+    .product-remove > a > img{
+        @apply transform transition duration-300;
+        &:hover{
+            @apply rotate-45;
+        }
     }
     .product-name{
         @apply text-lg italic;
@@ -31,5 +37,10 @@
 .woocommerce-Price-amount{
     bdi{
         @apply flex gap-3
+    }
+}
+@screen lg{
+    .body-table{
+        @apply flex-row flex-wrap;
     }
 }

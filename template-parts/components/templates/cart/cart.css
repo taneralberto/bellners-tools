@@ -1,4 +1,4 @@
 .cart {
-    @apply bg-bln-dark-primary px-2;
+    @apply w-full bg-bln-dark-primary px-2;
     font-family: 'Montserrat', sans-serif;
 }
