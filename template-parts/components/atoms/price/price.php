@@ -17,7 +17,6 @@ if ( $args['type'] === 'regular' ) {
 
     }
 
-
 } else if ( $args['type'] === 'sale' ) {
 
     if ( $product->get_sale_price() ) {
@@ -39,6 +38,12 @@ if ( $args['type'] === 'regular' ) {
 
         echo '<span class="price__percent">-' . $percent . '%' . '</span>';
     }
+
+} else if ( $args['type'] === 'total' ) {
+
+    global $woocommerce;
+
+    echo '<span class="price__total">' . get_woocommerce_currency_symbol() . $woocommerce->cart->get_cart_contents_total() . '</span>';
 
 } else {
 

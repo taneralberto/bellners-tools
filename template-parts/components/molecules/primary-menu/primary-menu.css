@@ -1,10 +1,57 @@
 .primary-menu {
+    @apply flex flex-col text-bln-gray-font font-bold text-sm;
 
-    & > ul {
-        @apply flex col-gap-4 text-bln-gray-font font-bold;
+    & > .menu-item-has-children {
+        @apply relative;
+    }
 
-        & > li:hover {
+    .menu-item__dropdown {
+        @apply w-4 absolute right-0;
+        top: 1rem;
+    }
+
+    & > .menu-item {
+        @apply py-3 border-b border-bln-dark-third;
+
+        &:hover {
             @apply text-bln-red;
         }
+
+        .sub-menu {
+            @apply mt-3 text-bln-white-font border-t border-bln-dark-third hidden flex-col;
+
+            &--show {
+                @apply flex;
+            }
+
+            & > .menu-item {
+                @apply py-3 ml-2 border-b border-bln-dark-third;
+
+                &:last-child {
+                    @apply border-none pb-0;
+                }
+            }
+        }
+    }
+
+}
+
+@screen lg {
+
+    .primary-menu {
+        @apply flex-row col-gap-8;
+
+        .menu-item__dropdown {
+            @apply hidden;
+        }
+
+        & > .menu-item {
+            @apply border-none;
+
+            &:hover {
+                @apply text-bln-red;
+            }
+        }
+
     }
 }
