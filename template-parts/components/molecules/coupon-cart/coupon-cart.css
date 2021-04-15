@@ -27,5 +27,6 @@
     }
 }
 .total::before{
+    @apply animate-pulse;
     content: url('https://i.postimg.cc/L8HGWpCX/scissors.png');
 }
