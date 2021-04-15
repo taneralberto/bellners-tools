@@ -14,6 +14,9 @@
 
     <div class="header__link-cart">
         <?= Atomic::atom( 'link-cart' ); ?>
+        <div class="header__price-total">
+            <?= Atomic::atom( 'price', ['type' => 'total'] ); ?>
+        </div>
     </div>
 
     <div class="header__site-branding">

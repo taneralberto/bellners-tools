@@ -1,3 +1,15 @@
+.price {
+
+
+    &__total {
+        @apply text-sm text-bln-gray-font font-extrabold tracking-tighter;
+
+        &:hover {
+            @apply text-bln-red;
+        }
+    }
+}
+
 .product-card {
 
     .price {
@@ -21,5 +33,6 @@
         &__percent {
             @apply font-bold text-lg text-bln-gray-font;
         }
+
     }
 }

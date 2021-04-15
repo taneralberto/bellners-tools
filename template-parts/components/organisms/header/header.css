@@ -1,5 +1,7 @@
 .header {
-    @apply bg-bln-dark-secondary p-4 flex flex-wrap items-center justify-center col-gap-4 row-gap-4;
+    @apply bg-bln-dark-secondary px-4 flex flex-wrap items-center justify-center col-gap-4 row-gap-4;
+    padding-top: clamp(.5rem, 1vw, 1.5rem);
+    padding-bottom: clamp(.5rem, 1vw, 1.5rem);
 
     &__hamburger {
         @apply mr-auto order-1;
@@ -7,7 +9,7 @@
 
     &__form-search {
         @apply order-2;
-        width: clamp(10rem, 50vw, 15rem);
+        width: clamp(10rem,15vw,15rem);
     }
 
     &__button-user {
@@ -18,12 +20,20 @@
         @apply order-4;
     }
 
+    &__price-total {
+        @apply hidden;
+    }
+
     &__site-branding {
         @apply order-5;
     }
 
     &__menu {
-        @apply hidden order-6;
+        @apply hidden order-6 w-full;
+
+        &--show {
+            @apply block;
+        }
     }
 }
 
@@ -44,15 +54,23 @@
     .header {
 
         &__hamburger {
-            @apply hidden;
+            @apply hidden order-none;
         }
 
-        &__button-user {
+        &__form-search {
             @apply order-4;
         }
 
+        &__button-user {
+            @apply order-5;
+        }
+
         &__link-cart {
-            @apply order-3;
+            @apply order-3 flex col-gap-2;
+        }
+
+        &__price-total {
+            @apply block;
         }
 
         &__site-branding {
@@ -60,7 +78,7 @@
         }
 
         &__menu {
-            @apply block order-1 mr-auto;
+            @apply block order-2 mr-auto w-auto;
         }
     }
 }
