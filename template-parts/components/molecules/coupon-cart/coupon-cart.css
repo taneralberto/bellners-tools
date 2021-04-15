@@ -11,7 +11,7 @@
         .button{
             @apply w-full text-base flex justify-center border-bln-red border-2 my-2 rounded-md p-2 transition duration-700;
             &:hover{
-                @apply bg-bln-red
+                @apply bg-bln-red;
             }
         }
         .button-gray{

@@ -9,6 +9,12 @@
     .product-remove{
         @apply w-full;
     }
+    .product-remove > a > img{
+        @apply transform transition duration-300;
+        &:hover{
+            @apply rotate-45;
+        }
+    }
     .product-name{
         @apply text-lg italic;
     }
