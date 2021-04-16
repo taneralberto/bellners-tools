@@ -1,0 +1,3 @@
+.payments {
+    @apply flex justify-evenly mt-4;
+}
