@@ -1,5 +1,9 @@
 .footer {
-    @apply bg-bln-dark-secondary p-3 flex flex-col row-gap-4;
+    @apply bg-bln-dark-secondary p-4 flex flex-col row-gap-4;
+
+    &__top {
+        @apply hidden;
+    }
 }
 
 @screen lg {

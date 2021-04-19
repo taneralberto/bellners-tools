@@ -11,8 +11,6 @@ class Menu {
         this.menu = document.getElementById( 'primary-menu' );
         this.menuChildren = this.menu ? [...this.menu.children] : [];
 
-        //this.menuChildren = Array.from(this.menu.children);
-
         this.createSubmenu();
         this.menuHamburgerHandle();
     }
@@ -48,18 +46,11 @@ class Menu {
             this.hamburger.addEventListener('click', () => {
 
                 const navLinks : HTMLElement | null = document.querySelector( '.header__menu' );
-                //const links : NodeListOf<Element> = document.querySelectorAll( '#menu-primary-menu li' );
-                //const bodyContainer = document.querySelector( '.body-container' );
-                //bodyContainer.classList.toggle( 'body-container--overflow-hidden' );
 
                 //Animate Links
                 if ( navLinks ) {
                     navLinks.classList.toggle( 'header__menu--show' );
                 }
-
-                /*links.forEach(link => {
-                    link.classList.toggle( 'fade' );
-                } );*/
 
                 //Hamburger Animation
                 this.hamburger?.classList.toggle( 'toggle' );

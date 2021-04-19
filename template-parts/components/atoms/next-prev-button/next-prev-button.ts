@@ -4,7 +4,7 @@ function nextPrevButtons() {
     const $nextButton : HTMLElement | null = document.querySelector( '.next-button' );
     const $prevButton : HTMLElement | null = document.querySelector( '.prev-button' );
 
-    let $$products : NodeListOf<Element> = document.querySelectorAll( '.product-card' );
+    let $$products : NodeListOf<Element> | null = document.querySelectorAll( '.product-card' );
     let index : number = 1;
 
     const $firstClone : HTMLElement = <HTMLElement> $$products[0].cloneNode( true );
@@ -68,4 +68,8 @@ function nextPrevButtons() {
 
 }
 
-nextPrevButtons();
+const $productsSlider : HTMLElement | null = document.querySelector( '.products-slider' );
+
+if ( $productsSlider ) {
+    nextPrevButtons();
+}
