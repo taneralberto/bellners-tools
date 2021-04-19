@@ -1,3 +1,3 @@
 .product{
-    @apply bg-bln-dark-primary px-8 text-bln-white-font w-full flex;
+    @apply bg-bln-dark-primary px-8 text-bln-gray-font w-full flex py-8;
 }
