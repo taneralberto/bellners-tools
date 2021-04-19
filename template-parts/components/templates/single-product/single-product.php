@@ -9,11 +9,13 @@ Atomic::atom('related');
 Atomic::atom('review');
 //Atomic::atom('review-meta');
 Atomic::atom('review-rating');
-Atomic::atom('sale-flash');
-Atomic::atom('share');
+
 Atomic::atom('stock');
 Atomic::atom('title');
+Atomic::atom('sale-flash');
 Atomic::atom('short-description');
 Atomic::atom('up-sells');
-Atomic::molecule('tabs');
 Atomic::molecule('add-to-cart');
+
+echo ('diferente');
+Atomic::molecule('tabs');
