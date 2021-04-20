@@ -24,3 +24,6 @@
 .title-block{
     @apply text-3xl font-bold text-bln-white-font;
 }
+.title-product{
+    @apply text-4xl text-bln-white-font;
+}

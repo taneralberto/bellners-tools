@@ -1,19 +1,29 @@
-<?php  Atomic::atom('meta');
+<?php
+
+Atomic::atom('meta');
 Atomic::atom('photoswipe');
-Atomic::atom('price');
 Atomic::atom('product-atributes');
 Atomic::atom('product-image');
-Atomic::atom('product-thumbnails');
-Atomic::atom('rating');
+//Atomic::atom('product-thumbnails');
+//Atomic::atom('rating');
 Atomic::atom('related');
 Atomic::atom('review');
-Atomic::atom('review-meta');
+//Atomic::atom('review-meta');
 Atomic::atom('review-rating');
-Atomic::atom('sale-flash');
-Atomic::atom('share');
+
+?>
+<?php Atomic::atom('sale-flash'); ?>
+
+<?php Atomic::atom('stock'); ?>
+<div class="title-product">
+    <?php Atomic::atom('title');?>
+</div>
+
+<?php
 Atomic::atom('short-description');
-Atomic::atom('stock');
-Atomic::atom('title');
+Atomic::atom('price');
 Atomic::atom('up-sells');
-Atomic::molecule('tabs');
 Atomic::molecule('add-to-cart');
+
+echo ('diferente');
+Atomic::molecule('tabs');

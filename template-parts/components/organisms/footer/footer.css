@@ -6,12 +6,19 @@
     }
 }
 
-@screen lg {
+@screen md {
 
     .footer {
 
         &__top {
-            @apply hidden;
+            @apply block;
         }
+    }
+}
+
+@screen lg {
+
+    .footer {
+
     }
 }
