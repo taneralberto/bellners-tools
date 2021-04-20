@@ -20,8 +20,8 @@ Atomic::atom('review-rating');
 </div>
 
 <?php
+Atomic::molecule('prices');
 Atomic::atom('short-description');
-Atomic::atom('price');
 Atomic::atom('up-sells');
 Atomic::molecule('add-to-cart');
 
