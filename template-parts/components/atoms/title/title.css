@@ -27,3 +27,6 @@
 .title-product{
     @apply text-4xl text-bln-white-font;
 }
+.product_title{
+    @apply text-3xl text-bln-white-font;
+}

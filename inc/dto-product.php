@@ -1,0 +1,2 @@
+<?php
+add_filter( 'woocommerce_get_price_html', 'change_displayed_sale_price_html', 10, 2 ); function change_displayed_sale_price_html( $price, $product ) { if( $product->is_on_sale() && ! is_admin() && ! $product->is_type('variable')){ $regular_price = (float) $product->get_regular_price(); $sale_price = (float) $product->get_price(); $precision = 1; $saving_percentage = round( 100 - ( $sale_price / $regular_price * 100 ), 1 ) . '%'; $price .= sprintf( __('<span class="snippet-dto-porcentaje">(-%s)</span>', 'woocommerce' ), $saving_percentage ); } return $price; } 
