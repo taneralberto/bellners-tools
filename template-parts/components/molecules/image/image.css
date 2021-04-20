@@ -22,3 +22,6 @@
 .testimonials__card__img{
     @apply rounded-full -mt-16 w-24;
 }
+.woocommerce-product-gallery{
+    @apply w-1/3;
+}

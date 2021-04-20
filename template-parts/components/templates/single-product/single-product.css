@@ -1,0 +1,3 @@
+.product{
+    @apply flex flex-wrap justify-center px-8 bg-bln-dark-primary text-bln-gray-font w-full;
+}
