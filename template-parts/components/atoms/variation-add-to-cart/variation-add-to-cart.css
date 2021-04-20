@@ -1,0 +1,11 @@
+.woocommerce-variation-add-to-cart{
+    @apply flex flex-row py-2 gap-2 items-center;
+    .quantity{
+        .input-text{
+            @apply bg-transparent text-bln-white-font border-2 border-bln-white-font p-2 outline-none rounded-md;
+        }
+    }
+    .single_add_to_cart_button{
+        @apply bg-bln-red p-4 text-bln-white-font;
+    }
+}
