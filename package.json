@@ -37,6 +37,7 @@
     "build:deploy": "npm run webpack:production & npm run postcss:production",
     "watch-js": "webpack --mode=development --watch=true",
     "watch-css": "cross-env NODE_ENV=development postcss src/css/style.css -o dist/css/style.css --watch",
-    "watch": "npm run watch-css & npm run watch-js"
+    "watch": "npm run watch-css & npm run watch-js",
+    "make-pot": "wp i18n make-pot . languages/bellner-tools.pot"
   }
 }
