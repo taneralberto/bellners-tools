@@ -185,6 +185,12 @@ require get_template_directory() . '/inc/customizer.php';
 require get_template_directory() . '/inc/Classes/atomic.php';
 
 /**
+ * Remove sale-flash
+ */
+
+require get_template_directory() . '/inc/sale-flash.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
