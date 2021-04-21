@@ -169,10 +169,6 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
-/**
- * Configure custom post types.
- */
-require get_template_directory() . '/inc/custom_post_types.php';
 
 /**
  * Customizer additions.
@@ -183,6 +179,12 @@ require get_template_directory() . '/inc/customizer.php';
  * Configuration features.
  */
 require get_template_directory() . '/inc/Classes/atomic.php';
+
+/**
+ * Remove sale-flash
+ */
+
+require get_template_directory() . '/inc/sale-flash.php';
 
 /**
  * Load Jetpack compatibility file.
@@ -196,7 +198,11 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
+<<<<<<< HEAD
 
+=======
+	require get_template_directory() . '/inc/dto-product.php';
+>>>>>>> ee4b874f72e44650dbe9e56984f621cbb95b0301
 }
 
 require get_template_directory() . '/inc/Classes/shipping-services.php';

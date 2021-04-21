@@ -36,3 +36,22 @@
 
     }
 }
+.summary{
+    .price{
+        @apply flex gap-2 items-center;
+        del{
+            @apply text-bln-red;
+        }
+        ins{
+            @apply text-bln-white-font;
+        }
+        .snippet-dto-porcentaje{
+            @apply text-bln-white-font bg-bln-red p-2;
+        }
+    }
+}
+@screen lg{
+    .price{
+        @apply text-xl;
+    }
+}

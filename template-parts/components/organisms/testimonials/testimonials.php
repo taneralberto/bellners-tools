@@ -1,9 +1,13 @@
 <?php
 
 $args = array(
+    'post_type' => 'post',
     'posts_per_page' => 3,
-    'post_type' => 'cpt_testimonials',
+    'orderby' => 'date',
+    'order' => 'DESC',
+    'category_name' => 'testimonial',
 );
+
 
 $query = new WP_Query( $args );
 

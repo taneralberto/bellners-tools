@@ -3,6 +3,7 @@
 $args = array(
     'posts_per_page' => 3,
     'post_type' => 'post',
+    'category_name' => 'article',
 );
 
 $query = new WP_Query( $args );
