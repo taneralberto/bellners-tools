@@ -33,4 +33,5 @@ if ( ! $short_description ) {
     <div class="bar-social-wc">
         <?php Atomic::molecule('bar-social'); ?>
     </div>
+    <?php Atomic::molecule('list-security'); ?>
 </div>

@@ -10,7 +10,7 @@
             }
         }
         .woocommerce-product-details__short-description{
-            @apply text-base italic text-bln-white-font flex flex-col gap-5;
+            @apply text-base italic text-bln-gray-font flex flex-col gap-5;
         }
         .product_meta{
             @apply text-bln-red text-base;
