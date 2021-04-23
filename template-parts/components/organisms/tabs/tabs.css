@@ -1,0 +1,16 @@
+	.woocommerce-tabs ul.tabs {
+			@apply flex gap-8 list-none m-0 p-0 text-left;
+		.woocommerce-tabs ul.tabs li {
+			@apply block relative m-0;
+		}
+		.woocommerce-tabs ul.tabs li a {
+			padding: 1em 0;
+			@apply block;
+		}
+}
+
+
+
+.woocommerce-tabs .panel h2:first-of-type {
+	margin-bottom: 1em;
+}
