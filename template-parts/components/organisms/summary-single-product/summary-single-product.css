@@ -1,5 +1,5 @@
 .summary{
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-4 w-3/5;
     .cart{
         @apply flex w-full flex-row items-center gap-2;
             .quantity > input{
@@ -10,7 +10,7 @@
             }
         }
         .woocommerce-product-details__short-description{
-            @apply text-lg text-bln-white-font;
+            @apply text-base italic text-bln-white-font flex flex-col gap-5;
         }
         .product_meta{
             @apply text-bln-red text-base;

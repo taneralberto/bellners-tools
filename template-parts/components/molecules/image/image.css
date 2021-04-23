@@ -122,3 +122,6 @@
 .single-product div.product .woocommerce-product-gallery.woocommerce-product-gallery--columns-5 .flex-control-thumbs li:nth-child(5n+1) {
 	clear: both;
 }
+.flex-active-slide > a > img{
+    @apply w-full;
+}
