@@ -16,7 +16,7 @@
 	@apply block;
 }
 .woocommerce-Tabs-panel{
-	@apply bg-bln-dark-secondary px-4 text-bln-gray-font text-justify text-xl;
+	@apply bg-bln-dark-secondary px-4 text-bln-gray-font text-justify text-xl p-6;
 }
 
 .woocommerce-tabs .panel h2:first-of-type {
