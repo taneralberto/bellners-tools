@@ -2,7 +2,7 @@
 	@apply w-full;
 }
 .woocommerce-tabs ul.tabs {
-	@apply flex gap-1 list-none m-0 p-0 text-left;
+	@apply flex gap-1 list-none m-0 p-0 text-left flex-col;
 }
 
 .woocommerce-tabs ul.tabs li {
@@ -21,4 +21,10 @@
 
 .woocommerce-tabs .panel h2:first-of-type {
 	@apply py-4 text-bln-red text-2xl;
+}
+
+@screen lg{
+	.woocommerce-tabs ul.tabs {
+		@apply flex-row;
+	}
 }
