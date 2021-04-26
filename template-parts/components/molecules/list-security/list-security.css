@@ -3,4 +3,7 @@
         &__li{
             @apply flex gap-2 bg-bln-dark-secondary p-4 border border-bln-gray-font;
         }
+        &__li > img{
+            @apply w-8 h-8;
+        }
 }
