@@ -202,6 +202,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/dto-product.php';
 	require get_template_directory() . '/inc/rename-tabs-heading.php';
 	require get_template_directory() . '/inc/reorder-tabs.php';
+	require get_template_directory() . '/inc/new-tab-product-cat.php';
 }
 
 require get_template_directory() . '/inc/Classes/shipping-services.php';
