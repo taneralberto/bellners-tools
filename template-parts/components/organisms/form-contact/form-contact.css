@@ -1,3 +1,15 @@
 .wpcf7-form{
-    @apply border-b-2 border-bln-gray-font flex flex-col gap-2 py-4;
+    @apply border-b-2 border-bln-gray-font flex flex-col gap-4 py-4 items-center;
+    .wpcf7-form-control-wrap{
+        @apply w-full;
+        .wpcf7-form-control{
+            @apply p-2 bg-transparent border-2 border-bln-red text-bln-gray-font rounded-md w-11/12;
+        }
+    }
+    .wpcf7-submit{
+        @apply bg-bln-red rounded-md text-bln-white-font p-4 font-bold transition duration-700 cursor-pointer;
+        &:hover{
+            @apply bg-bln-dark-third;
+        }
+    }
 }
