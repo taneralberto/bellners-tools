@@ -1,0 +1,8 @@
+.terms-page{
+    @apply bg-bln-dark-primary text-bln-gray-font flex-col gap-2 w-full justify-center py-8 px-4;
+}
+@screen lg{
+    .terms-page{
+        @apply flex-row flex;
+    }
+}
