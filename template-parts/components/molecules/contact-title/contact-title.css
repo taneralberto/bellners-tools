@@ -1,0 +1,6 @@
+.contact-title{
+    @apply text-bln-white-font text-4xl font-bold flex flex-col items-center;
+        &__warn{
+            @apply text-bln-gray-font text-sm;
+        }
+}
