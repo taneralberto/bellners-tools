@@ -2,13 +2,18 @@
 
     <div class="footer__top">
         <div class="footer__shipping-outer">
-            <?= Atomic::molecule( 'shipping-outer' ); ?>
+            <?= Atomic::organism( 'shipping-outer' ); ?>
         </div>
     </div>
 
     <div class="footer__middle">
+
+        <div class="footer__contact">
+            <?= Atomic::molecule( 'footer-contact' ); ?>
+        </div>
+
         <div class="footer__menu">
-            <?= Atomic::molecule( 'primary-menu' ); ?>
+            <?= Atomic::molecule( 'footer-menu' ); ?>
         </div>
     </div>
 

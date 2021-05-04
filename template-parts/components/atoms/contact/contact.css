@@ -1,0 +1,7 @@
+.contact {
+    @apply flex col-gap-2;
+
+    &__icon {
+        @apply w-8 h-8;
+    }
+}

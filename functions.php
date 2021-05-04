@@ -198,13 +198,14 @@ if ( defined( 'JETPACK__VERSION' ) ) {
  */
 if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/woocommerce.php';
-<<<<<<< HEAD
 
-=======
 	require get_template_directory() . '/inc/dto-product.php';
->>>>>>> ee4b874f72e44650dbe9e56984f621cbb95b0301
+
 }
 
+/**
+ * Create the shipping services
+ */
 require get_template_directory() . '/inc/Classes/shipping-services.php';
 
 /* Quita el contador de productos en las categorías */

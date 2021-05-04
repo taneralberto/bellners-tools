@@ -1,0 +1,52 @@
+.shipping-service {
+    @apply flex flex-col items-center row-gap-2;
+
+    &__icon {
+        @apply p-6 bg-bln-dark-third rounded-full;
+
+        &__default {
+            @apply w-12;
+        }
+
+        &__hover {
+            @apply hidden w-12;
+        }
+    }
+
+    &:hover {
+
+        .shipping-service {
+
+            &__icon {
+
+                &__default {
+                    @apply hidden;
+                }
+
+                &__hover {
+                    @apply block;
+                }
+            }
+
+            &__title {
+                @apply text-bln-red;
+            }
+        }
+    }
+
+    &__title {
+        @apply font-bold text-bln-white-font text-center;
+        font-size: clamp(1rem, 1vw, 1.5rem);
+    }
+
+    &__description {
+        @apply text-sm text-bln-gray-font text-center;
+    }
+}
+
+@screen xl {
+
+    .shipping-service {
+        @apply flex-row col-gap-4;
+    }
+}

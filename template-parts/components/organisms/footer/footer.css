@@ -4,6 +4,14 @@
     &__top {
         @apply hidden;
     }
+
+    &__contact {
+        @apply hidden;
+    }
+
+    &__bottom {
+        @apply flex flex-col row-gap-4;
+    }
 }
 
 @screen md {
@@ -13,6 +21,10 @@
         &__top {
             @apply block;
         }
+
+        &__bottom {
+            @apply flex-row justify-between;
+        }
     }
 }
 
@@ -20,5 +32,35 @@
 
     .footer {
 
+
+        &__middle {
+            @apply flex border-t border-b border-bln-dark-third py-8;
+        }
+
+        &__contact {
+            @apply block;
+            flex-shrink: 3;
+        }
+
+        &__menu {
+            @apply w-full;
+            flex-shrink: 1;
+        }
+
+    }
+}
+
+@screen xl {
+
+    .footer {
+        @apply px-32 py-12;
+
+        &__middle {
+            @apply py-16 mt-4;
+        }
+
+        &__bottom {
+            @apply mt-4;
+        }
     }
 }

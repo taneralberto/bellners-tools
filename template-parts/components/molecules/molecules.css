@@ -14,3 +14,6 @@
 @import './site-branding/site-branding.css';
 @import './primary-menu/primary-menu.css';
 @import './payments/payments.css';
+@import './shipping-service/shipping-service.css';
+@import './footer-menu/footer-menu.css';
+@import './footer-contact/footer-contact.css';

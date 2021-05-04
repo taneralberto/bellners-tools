@@ -1,12 +1,25 @@
 <?php
 
-if ( $args['type'] === 'product' ) {
+if ( isset( $args['type'] ) ) {
 
-    echo wp_get_attachment_image( $args['id'], $args['size'] );
+    if ( $args['type'] === 'product' ) {
+
+        echo wp_get_attachment_image( $args['id'], $args['size'] );
+
+    }
 
 } else {
 
-    the_post_thumbnail( $args['size'], ['class' => $args['class']] );
+    if ( isset( $args['class'] ) ) {
+
+        the_post_thumbnail( $args['size'], [ 'class' => $args['class'] ] );
+
+    } else {
+
+        the_post_thumbnail( $args['size'] );
+
+    }
+
 }
 
 

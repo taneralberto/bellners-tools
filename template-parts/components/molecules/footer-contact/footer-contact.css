@@ -1,0 +1,17 @@
+.footer-contact {
+    @apply flex flex-col row-gap-2 text-sm text-bln-gray-font font-semibold;
+
+    &__title {
+        @apply text-base text-bln-white-font font-bold;
+    }
+}
+
+@screen lg {
+
+    .footer-contact {
+
+        &__title {
+            @apply text-2xl;
+        }
+    }
+}
