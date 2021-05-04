@@ -1,0 +1,6 @@
+.info-contact{
+    @apply text-bln-gray-font flex flex-col justify-center;
+    &__ > li{
+        @apply flex flex-row gap-2;
+    }
+}
