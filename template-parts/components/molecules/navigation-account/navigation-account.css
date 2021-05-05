@@ -1,0 +1,10 @@
+.account-page{
+    .woocommerce{
+        .woocommerce-MyAccount-navigation{
+            @apply bg-bln-dark-secondary w-1/3;
+        }
+        .woocommerce-MyAccount-navigation > ul > li{
+            @apply border border-bln-gray-font p-4 text-bln-red;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+.commentlist{
+	@apply overflow-scroll;
+	min-width: 90%;
+}
+li.comment {
+    @apply relative leading-8 my-10 bg-transparent border-4 border-bln-red p-8 rounded-lg;
+	min-width:90%;
+    box-shadow: 4px 4px 2px 2px hsl(0, 0%, 49%);
+}
+
+li.comment:before,
+li.comment:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+}
+
+li.comment:before,
+li.comment:after {
+	left: 10px;
+	bottom: -30px;
+	width: 40px;
+	height: 40px;
+	-webkit-border-radius: 28px;
+	-moz-border-radius: 28px;
+	border-radius: 28px;
+    @apply bg-bln-red border-4 border-bln-dark-secondary;
+}
+
+li.comment:after {
+	width: 20px;
+	height: 20px;
+	left: 5px;
+	bottom: -40px;
+	-webkit-border-radius: 18px;
+	-moz-border-radius: 18px;
+	border-radius: 18px;
+}
+.comment_container{
+	.comment-text{
+		.meta{
+			.woocommerce-review__published-date{
+				@apply italic text-bln-red;
+			}
+		}
+		.description{
+			@apply flex justify-end gap-2 text-bln-white-font italic;
+		}
+		.description::before{
+			content:' ~ ';
+		}
+	}
+}
+.comment_container > img{
+	@apply rounded-full;
+}
+.comment-form{
+	.comment-form-comment{
+		@apply flex flex-col-reverse;
+	}
+	.comment-form-comment > textarea{
+		@apply w-full bg-transparent border border-bln-gray-font p-6 text-bln-white-font;;
+	}
+	.form-submit{
+		.submit{
+			@apply w-24 bg-bln-red text-bln-white-font rounded-md cursor-pointer p-4 transition duration-700;
+			&:hover{
+				@apply bg-bln-white-font text-bln-red;
+			}
+		}
+	}
+}
+.comment-reply-title{
+	@apply text-2xl text-bln-white-font;
+}
+@screen lg{
+	.commentlist{
+		@apply min-w-0;
+		li.comment{
+			@apply w-2/3 min-w-0;
+		}
+	}
+}

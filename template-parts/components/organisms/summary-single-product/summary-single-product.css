@@ -1,3 +1,24 @@
 .summary{
-    @apply flex flex-col justify-center gap-4 py-8;
+    @apply flex flex-col gap-4;
+    .cart{
+        @apply flex w-full flex-row items-center gap-2;
+            .quantity > input{
+                @apply bg-transparent border-2 border-bln-gray-font p-2 text-bln-white-font font-bold;
+            }
+            .single_add_to_cart_button{
+                @apply bg-bln-red text-bln-white-font p-4 text-base;
+            }
+        }
+        .woocommerce-product-details__short-description{
+            @apply text-base italic text-bln-gray-font flex flex-col gap-5;
+        }
+        .product_meta{
+            @apply text-bln-red text-base;
+        }
+}
+
+@screen lg{
+    .summary{
+        @apply w-3/5;
+    }
 }

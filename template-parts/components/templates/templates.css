@@ -2,3 +2,6 @@
 @import './home/home.css';
 @import './cart/cart.css';
 @import './single-product/single-product.css';
+@import './contact-page/contact-page.css';
+@import './terms-page/terms-page.css';
+@import './account-page/account-page.css';

@@ -1,0 +1,8 @@
+.contact-page{
+    @apply bg-bln-dark-primary flex flex-col-reverse p-4 justify-center gap-8 items-center;
+}
+@screen lg{
+    .contact-page{
+        @apply flex-row;
+    }
+}

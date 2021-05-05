@@ -1,0 +1,1 @@
+<img class="terms-page__icon" src="https://i.postimg.cc/HntWxd0W/term.png" alt="Terms & conditions">

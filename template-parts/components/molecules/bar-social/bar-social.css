@@ -9,3 +9,6 @@
             }
     }
 }
+.bar-social-wc{
+    @apply flex flex-row gap-2;
+}

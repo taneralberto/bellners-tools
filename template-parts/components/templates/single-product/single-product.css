@@ -1,3 +1,6 @@
 .product{
-    @apply flex flex-wrap justify-center px-2 bg-bln-dark-primary text-bln-gray-font w-full gap-8 py-8;
+    @apply flex flex-wrap bg-bln-dark-primary text-bln-gray-font w-full gap-8 p-2;
+}
+@screen lg{
+    @apply px-16 py-8;
 }

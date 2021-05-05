@@ -1,0 +1,9 @@
+.info-contact{
+    @apply text-bln-gray-font flex flex-col items-center gap-4;
+}
+.info-contact > li{
+    @apply flex flex-row gap-2 items-center;
+}
+.info-contact > li > img {
+    @apply w-8 h-8;
+}

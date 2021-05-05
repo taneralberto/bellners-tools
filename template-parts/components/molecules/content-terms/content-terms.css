@@ -1,0 +1,22 @@
+.terms-page{
+    &__content{
+        @apply w-full flex flex-col gap-3;
+    }
+    &__content > h2{
+        @apply text-4xl text-bln-white-font font-bold flex items-center gap-4;
+        &::after{
+            content: url('https://i.postimg.cc/9MgDGsLY/shield.png');
+        }
+    }
+    &__content > p{
+        @apply border-b-2 border-r-2 border-bln-gray-font p-2;
+    }
+}
+
+@screen lg{
+    .terms-page{
+        &__content{
+            @apply w-2/3 text-justify;
+        }
+    }
+}

@@ -1,0 +1,11 @@
+.map-address{
+    @apply border-4 border-bln-red;
+    height: 450px;
+    box-shadow: 5px 10px hsl(0, 0%, 49%);
+}
+@screen lg{
+    .map-address{
+        width:600px;
+        height: 750px;
+    }
+}

@@ -1,0 +1,7 @@
+.account-page{
+    .woocommerce{
+        .woocommerce-MyAccount-content{
+            @apply w-4/6 border-b border-r border-t border-bln-gray-font p-4 text-bln-white-font;
+        }
+    }
+}
