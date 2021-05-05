@@ -1,3 +1,8 @@
 .account-page{
-    @apply bg-bln-dark-primary text-bln-gray-font px-8 flex justify-center;
+    @apply bg-bln-dark-primary text-bln-gray-font flex justify-center;
+}
+@screen lg{
+    .account-page{
+        @apply px-8;
+    }
 }
