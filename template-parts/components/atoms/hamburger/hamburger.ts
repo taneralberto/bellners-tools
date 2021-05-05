@@ -5,14 +5,17 @@ class Menu {
     menu : HTMLElement | null;
     menuChildren : Array<Element>;
 
-    constructor(){
+    constructor( menuName : string = 'primary-menu' ){
         this.numerone = 1;
         this.hamburger = document.querySelector( '.hamburger' );
-        this.menu = document.getElementById( 'primary-menu' );
+        this.menu = document.getElementById( menuName );
         this.menuChildren = this.menu ? [...this.menu.children] : [];
 
         this.createSubmenu();
-        this.menuHamburgerHandle();
+
+        if ( menuName === 'primary-menu' ) {
+            this.menuHamburgerHandle();
+        }
     }
 
     createSubmenu() {
@@ -60,4 +63,5 @@ class Menu {
 }
 
 new Menu();
+new Menu( 'menu-footer' );
 

@@ -206,6 +206,9 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/remove-tag-p-form.php';
 }
 
+/**
+ * Create the shipping services
+ */
 require get_template_directory() . '/inc/Classes/shipping-services.php';
 
 /* Quita el contador de productos en las categorías */

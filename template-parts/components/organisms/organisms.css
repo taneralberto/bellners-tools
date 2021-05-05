@@ -11,9 +11,13 @@
 @import './footer/footer.css';
 @import './collaterals-cart/collaterals-cart.css';
 @import './summary-single-product/summary-single-product.css';
+@import './shipping-outer/shipping-outer.css';
 @import './tabs/tabs.css';
 @import './contact-content/contact-content.css';
 @import './form-contact/form-contact.css';
 @import './content-account/content-account.css';
+<<<<<<< HEAD
 @import './account-details/account-details.css';
 @import './login-account/login-account.css';
+=======
+>>>>>>> 007081d8dd7277dca29fd3803597374817c9a450
