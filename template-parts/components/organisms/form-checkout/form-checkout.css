@@ -34,7 +34,7 @@
             @apply flex-row;
                 .col-1{
                     .woocommerce-billing-fields{
-                        @apply text-5xl;
+                        @apply text-2xl;
                     }
                 }
         }
