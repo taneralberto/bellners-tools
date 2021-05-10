@@ -13,6 +13,15 @@
                 tr{
                     td{
                         @apply border border-bln-gray-font text-bln-white-font px-4;
+                            .product-quantity{
+                                @apply text-bln-red;
+                            }
+                            .product-quantity::before{
+                                content: "(";
+                            }
+                            .product-quantity::after{
+                                content: ")";
+                            }
                     }
                 }
             }
