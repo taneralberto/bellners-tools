@@ -2,5 +2,25 @@
     @apply flex justify-evenly col-gap-4;
 }
 .woocommerce-checkout-payment{
-
+    @apply flex flex-col gap-4;
+    .wc_payment_methods{
+        .wc_payment_method{
+            @apply bg-bln-dark-secondary p-4 text-bln-gray-font;
+        }
+        .wc_payment_method > .payment_box > p::before{
+            @apply p-2;
+            content: url('https://i.postimg.cc/HWwfk8y5/question-mark.png');
+        }
+        .wc_payment_method > label{
+            @apply  text-bln-white-font;
+        }
+    }
+    .form-row{
+        .button{
+            @apply bg-bln-red text-bln-white-font rounded-md p-2 transition duration-700;
+                &:hover{
+                    @apply bg-bln-white-font text-bln-red;
+                }
+        }
+    }
 }
