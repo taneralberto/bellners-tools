@@ -1,5 +1,5 @@
 .checkout-page{
     .woocommerce{
-        @apply bg-bln-dark-primary p-4;
+        @apply bg-bln-dark-primary p-4 flex flex-col;
     }
 }

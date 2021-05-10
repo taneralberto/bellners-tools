@@ -19,3 +19,5 @@
 @import './account-details/account-details.css';
 @import './login-account/login-account.css';
 @import './account-billing/account-billing.css';
+@import './form-checkout/form-checkout.css';
+@import './form-checkout/order-review.css';
