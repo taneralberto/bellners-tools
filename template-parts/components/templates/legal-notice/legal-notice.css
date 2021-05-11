@@ -1,0 +1,32 @@
+.legal-notice{
+    @apply bg-bln-dark-primary text-bln-gray-font px-4 flex flex-col gap-4 justify-center items-center;
+        &__content{
+            @apply w-full text-justify;
+        }
+        &__content > h1{
+            @apply text-bln-red font-bold text-xl;
+        }
+        &__content > h2{
+            @apply  text-bln-white-font font-bold text-base px-4;
+        }
+        &__content > p{
+            @apply px-8;
+        }
+        &__content > ul{
+            @apply list-disc px-10 text-bln-red;
+        }
+}
+@screen lg{
+    .legal-notice{
+        @apply p-4;
+            &__content{
+                @apply w-2/3 ;
+            }
+            &__content > h1{
+                @apply text-4xl;
+            }
+            &__content > h2{
+                @apply text-2xl;
+            }
+    }
+}
