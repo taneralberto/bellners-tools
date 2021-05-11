@@ -1,3 +1,6 @@
 .about-page{
     @apply flex flex-col gap-4 px-8 bg-bln-dark-primary justify-center;
+        &__title{
+            @apply text-6xl pt-6 font-bold text-bln-red;
+        }
 }

@@ -1,4 +1,4 @@
-.about-page{
+.about-page-reasons{
     &__title{
         @apply flex flex-row gap-4 justify-center items-center;
     }

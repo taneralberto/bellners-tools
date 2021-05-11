@@ -1,4 +1,4 @@
-<div class="about-page__title">
+<div class="about-page-reasons__title">
     <h1>10 REASONS:</h1>
     <h3>Why Shop Acme Tools? </h3>
     <p>Because it's a smart buy!</p>

@@ -1,4 +1,6 @@
-<? Atomic::atom('title'); ?>
+<h1 class="about-page__title">
+    <? Atomic::atom('title'); ?>
+</h1>
 <div class="about-head">
     <div class="about-head__content">
         <? Atomic::atom('single-content'); ?>
