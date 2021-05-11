@@ -3,6 +3,11 @@
         @apply px-2 py-2 text-justify text-bln-white-font;
     }
 }
+.about-head{
+    &__content{
+        @apply flex flex-col w-2/3;
+    }
+}
 @screen lg{
     .container-single{
         &__content{

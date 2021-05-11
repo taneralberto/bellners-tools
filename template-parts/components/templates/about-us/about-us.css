@@ -1,0 +1,3 @@
+.about-page{
+    @apply flex flex-col gap-4 px-8 bg-bln-dark-primary justify-center;
+}

@@ -1,0 +1,2 @@
+<?
+Atomic::molecule('about-us');
