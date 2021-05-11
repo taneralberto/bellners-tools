@@ -1,0 +1,14 @@
+.about-page{
+    &__title{
+        @apply flex flex-row gap-4 justify-center items-center;
+    }
+    &__title > h1{
+        @apply underline text-bln-red text-4xl;
+    }
+    &__title > h3{
+        @apply text-2xl text-bln-gray-font;
+    }
+    &__title > p{
+        @apply text-xl text-bln-white-font;
+    }
+}
