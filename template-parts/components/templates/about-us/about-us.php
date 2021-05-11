@@ -1,2 +1,2 @@
 <?
-Atomic::molecule('about-us');
+Atomic::molecule('about-us-head');
