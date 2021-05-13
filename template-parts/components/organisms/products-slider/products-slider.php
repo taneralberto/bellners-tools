@@ -34,5 +34,5 @@ if ( $query->have_posts() ) {
         ?>
     </div>
 </div>
-<?php } ?>
 
+<?php wp_reset_postdata(); } ?>

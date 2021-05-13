@@ -4,8 +4,9 @@
         min-width:90%;
         .products{
             @apply flex overflow-scroll gap-4 p-4;
+            scrollbar-width: none;
                 .product-category{
-                    @apply text-sm text-bln-white-font border-2 border-bln-red;
+                    @apply text-sm text-bln-white-font border-2 border-bln-red flex justify-center;
                     min-width:50%;
                 }
                 .product-category > a{

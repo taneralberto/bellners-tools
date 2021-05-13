@@ -36,7 +36,7 @@
     }
 }*/
 
-if ( $args['permalink?'] ) {
+if ( isset( $args['permalink?'] ) ) {
 
     the_title( '<a href=' . get_permalink() . '>', '</a>' );
 

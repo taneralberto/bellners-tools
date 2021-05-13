@@ -1,5 +1,6 @@
 .our-clients{
     @apply px-4 flex flex-row gap-4 overflow-scroll;
+    scrollbar-width: none;
     max-width:90%;
         &__item{
             @apply flex items-center justify-center border-r-2 border-l-2 border-bln-dark-third;

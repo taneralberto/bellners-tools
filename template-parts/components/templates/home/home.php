@@ -1,5 +1,6 @@
 <div class="home">
     <?php
+        Atomic::organism( 'main-banner' );
         Atomic::organism( 'products-slider' );
         Atomic::organism( 'list-cat' );
         Atomic::organism( 'testimonials' );

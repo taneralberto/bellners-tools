@@ -1,5 +1,6 @@
 <?php
 switch ( $args['payment_method'] ) {
+
     case 'Check payments' :
         echo '<img src="https://demo.templatetrend.com/prestashop/PRS375/modules/ttpaymentbannerblock/views/img/payment1.png" alt="Check Payment" width="auto" height="auto">';
     break;
