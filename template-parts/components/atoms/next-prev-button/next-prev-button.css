@@ -1,3 +1,11 @@
 .next-button, .prev-button {
-    @apply text-5xl p-4 bg-bln-dark-secondary;
+    @apply text-3xl bg-bln-dark-secondary p-2;
+}
+
+.next-button {
+    @apply transform -rotate-90;
+}
+
+.prev-button {
+    @apply transform rotate-90;
 }
