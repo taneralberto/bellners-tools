@@ -31,3 +31,8 @@
     @apply text-3xl text-bln-white-font;
 }
 
+.subsidiaries{
+    &__title{
+        @apply text-bln-gray-font text-4xl font-bold;
+    }
+}

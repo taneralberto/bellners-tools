@@ -21,6 +21,7 @@ class Atomic {
         }
 
     }
+    /**Testing Atomic Design for wordpress development theme :) */
 
     public static function molecule ( $name, $args = [] ) {
 

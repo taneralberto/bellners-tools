@@ -8,6 +8,34 @@
         @apply flex flex-col w-2/3;
     }
 }
+
+.wp-block-group__inner-container{
+    @apply flex px-4 flex-wrap row-gap-8;
+}
+.wp-block-media-text{
+    @apply w-full text-bln-gray-font;
+        &__content{
+            @apply flex flex-col gap-2;
+            p:nth-child(n){
+                @apply flex gap-2 items-center;
+            }
+            p:nth-child(1)::before{
+                content: url('https://i.postimg.cc/hjTsDgp3/correo.png');
+            }
+            p:nth-child(2)::before{
+                content: url('https://i.postimg.cc/2ShPtRfT/position.png');
+            }
+            p:nth-child(3)::before{
+                content: url('https://i.postimg.cc/QdT42H9j/phone-call.png');
+            }
+            p:nth-child(4)::before{
+                content: url('https://i.postimg.cc/W1vYPsMr/whatsapp.png');
+            }
+        }
+}
+.subsidiaries > h3{
+    @apply w-full text-3xl border-b-2 border-bln-red text-bln-red p-4;
+}
 @screen lg{
     .container-single{
         &__content{
@@ -16,5 +44,8 @@
         &__content > p::selection{
                 @apply bg-bln-dark-primary text-bln-gray-font;
         }
+    }
+    .wp-block-media-text{
+        @apply w-1/2;
     }
 }

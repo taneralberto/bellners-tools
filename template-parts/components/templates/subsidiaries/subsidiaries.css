@@ -1,0 +1,8 @@
+.subsidiaries{
+    @apply bg-bln-dark-primary flex flex-col px-4 gap-4;
+}
+@screen lg{
+    .subsidiaries{
+        @apply px-8;
+    }
+}
