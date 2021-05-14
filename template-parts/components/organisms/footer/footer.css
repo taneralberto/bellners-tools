@@ -1,5 +1,5 @@
 .footer {
-    @apply bg-bln-dark-secondary p-4 flex flex-col row-gap-4;
+    @apply bg-bln-dark-secondary p-4 flex flex-col row-gap-4 mt-8;
 
     &__top {
         @apply hidden;

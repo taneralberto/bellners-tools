@@ -1,7 +1,7 @@
 .formu-newsletter{
     @apply flex flex-col justify-center gap-2 items-center w-full;
         &__input{
-            @apply p-4 text-base text-bln-white-font bg-transparent border border-white w-4/5;
+            @apply p-4 text-base text-bln-white-font bg-transparent border border-bln-dark-third w-4/5 outline-none;
         }
         &__button{
             @apply bg-bln-red rounded-md text-bln-white-font p-4 w-1/3;

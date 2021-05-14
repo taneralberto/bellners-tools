@@ -1,0 +1,33 @@
+.call-to-action {
+    @apply text-center text-bln-white-font;
+
+    &__title {
+        @apply text-5xl font-extrabold;
+    }
+
+    &__info {
+        @apply border-4 border-bln-red p-6 h-32 flex items-center justify-center relative;
+    }
+
+    &__text1 {
+        @apply text-xl font-bold;
+    }
+
+    &__text2 {
+        @apply bg-yellow-500 p-4 text-2xl font-extrabold text-bln-dark-primary absolute left-0 right-0 mx-12 flex justify-center;
+        bottom: -34px;
+    }
+
+    &__text2::before {
+        @apply absolute;
+        content: '';
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #ecc94b;
+        bottom: -20px;
+    }
+
+    &__button {
+        @apply mt-16;
+    }
+}

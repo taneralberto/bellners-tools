@@ -1,0 +1,35 @@
+.slider-section {
+    @apply overflow-hidden mt-8;
+
+    &__header {
+        @apply flex justify-between items-center px-6;
+    }
+
+    &__title {
+        @apply text-bln-white-font flex items-center col-gap-2;
+        font-size: clamp(1rem, 2vw, 3rem);
+
+        strong {
+            @apply font-extrabold;
+        }
+
+        &__icon {
+            @apply w-6 h-6;
+        }
+    }
+
+    &__buttons {
+        @apply flex w-20 h-10 col-gap-2;
+    }
+}
+
+.products-slider {
+
+    @apply flex snap snap-x snap-proximity transition duration-150 mt-2;
+}
+
+@screen xl {
+    .slider-section {
+        @apply mx-32;
+    }
+}

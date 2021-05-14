@@ -1,5 +1,5 @@
 .button-shop-now{
-    @apply bg-bln-red p-4 text-bln-white-font w-1/6 text-center font-bold duration-500 cursor-pointer;
+    @apply bg-bln-red p-4 text-bln-white-font text-center font-bold duration-200 cursor-pointer;
     &:hover{
         @apply bg-bln-white-font text-bln-dark-primary;
     }

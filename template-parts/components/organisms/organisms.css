@@ -1,8 +1,8 @@
-@import './products-slider/products-slider.css';
+@import './slider-section/slider-section.css';
 @import 'posts-slider/posts-slider.css';
 @import './block-newsletter/block-newsletter.css';
 @import './testimonials/testimonials.css';
-@import './our-clients/our-clients.css';
+@import './our-brands/our-brands.css';
 @import './list-cat/list-cat.css';
 @import './parallax/parallax.css';
 @import './tbody-cart/tbody-cart.css';
@@ -16,6 +16,7 @@
 @import './contact-content/contact-content.css';
 @import './form-contact/form-contact.css';
 @import './content-account/content-account.css';
+@import './main-banner/main-banner.css';
 @import './account-details/account-details.css';
 @import './login-account/login-account.css';
 @import './account-billing/account-billing.css';

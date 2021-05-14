@@ -21,5 +21,3 @@ if ( isset( $args['type'] ) ) {
     }
 
 }
-
-

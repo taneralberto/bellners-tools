@@ -1,0 +1,62 @@
+.main-banner {
+    @apply relative p-8 flex justify-center items-center;
+    height: 70vh;
+    /*box-shadow: inset 0px 0px 40px 20px black, 0px 0px 5px black;*/
+    background: url( 'https://i.postimg.cc/bvw97SF7/pexels-ivan-samkov-4491874.jpg' ) center center/cover no-repeat;
+
+    &__background {
+        @apply absolute inset-0;
+        /*background: url("https://i.postimg.cc/bvw97SF7/pexels-ivan-samkov-4491874.jpg") right center/cover no-repeat;
+        filter: contrast(100%) brightness(50%) saturate(50%);*/
+    }
+
+    &__call-to-action {
+        z-index: 1;
+        min-width: 300px;
+        width: 400px;
+    }
+
+    /*&__products {
+        @apply flex justify-center col-gap-8 z-10;
+        background: url("https://i.postimg.cc/52vJntcw/metaltable.jpg") right center/cover no-repeat;
+        filter: contrast(100%) brightness(50%) saturate(50%);
+    }
+
+    &__product {
+        @apply transition-transform duration-200;
+    }
+
+    &__product:hover {
+        @apply transform scale-110;
+
+        &:first-child {
+            @apply self-start;
+        }
+    
+        &:nth-child(2) {
+            @apply self-center;
+        }
+    
+        &:nth-child(3) {
+            @apply self-end;
+        }
+    
+        &:last-child {
+            @apply self-start;
+        }
+    }
+
+
+
+    &__image {
+        @apply ;
+    }
+
+    &__info {
+        @apply text-xl font-extrabold text-bln-white-font;
+    }
+
+    &__title {
+        @apply ;
+    }*/
+}

@@ -24,4 +24,4 @@ if ( $query->have_posts() ) {
             }
         ?>
     </div>
-<?php } ?>
+<?php wp_reset_postdata(); } ?>

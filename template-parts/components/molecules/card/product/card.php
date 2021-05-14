@@ -5,9 +5,9 @@
     </div>
 
 
-    <h1 class="product-card__title">
+    <h3 class="product-card__title">
         <?php Atomic::atom( 'title', [ 'permalink?' => true ] ); ?>
-    </h1>
+    </h3>
 
     <div class="product-card__price">
         <?= Atomic::molecule( 'prices' ); ?>
