@@ -1,0 +1,39 @@
+.woocommerce-checkout-review-order{
+    @apply text-bln-gray-font flex flex-col gap-4;
+        .woocommerce-checkout-review-order-table{
+            @apply w-full;
+            thead{
+                tr{
+                    th{
+                        @apply text-xl text-bln-red p-4 bg-bln-dark-secondary border border-bln-gray-font w-1/2;
+                    }
+                }
+            }
+            tbody{
+                tr{
+                    td{
+                        @apply border border-bln-gray-font text-bln-white-font px-4;
+                            .product-quantity{
+                                @apply text-bln-red;
+                            }
+                            .product-quantity::before{
+                                content: "(";
+                            }
+                            .product-quantity::after{
+                                content: ")";
+                            }
+                    }
+                }
+            }
+            tfoot{
+                tr{
+                    th{
+                        @apply border-b border-bln-gray-font;
+                    }
+                    td{
+                        @apply border border-bln-white-font text-bln-red px-4;
+                    }
+                }
+            }
+        }
+}

@@ -1,0 +1,30 @@
+.about-page-reasons{
+    &__title{
+        @apply flex flex-col gap-4 justify-center items-center;
+    }
+    &__title > h1{
+        @apply underline text-bln-red text-4xl;
+    }
+    &__title > h3{
+        @apply text-2xl text-bln-gray-font;
+    }
+    &__title > p{
+        @apply text-xl text-bln-white-font;
+    }
+}
+@screen lg{
+    .about-page-reasons{
+        &__title{
+            @apply flex-row;
+        }
+        &__title > h1{
+            @apply text-2xl;
+        }
+        &__title > h3{
+            @apply text-xl;
+        }
+        &__title > p{
+            @apply text-lg;
+        }
+    }
+}

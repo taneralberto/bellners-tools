@@ -1,0 +1,4 @@
+<li class="about-page__reasons__li">
+	<span class="number">4</span><h3>Price Guarantee &amp; 30 Day Price Protection</h3>
+	<p>Buy now and price shop later. At Acme Tools, we pride ourselves on offering you products at guaranteed low prices. From time to time we are not able to see what the competition is doing. We make every effort to give you the lowest price possible. However, our prices won't be beat.&nbsp;<a href="https://www.acmetools.com/shop/tools/price-guarantee">Click for details.</a>&nbsp;&nbsp;Also, if we offer a lower price within 30 days from your date of purchase, we will gladly refund you the difference.&nbsp;<a href="https://www.acmetools.com/shop/tools/price-guarantee">Click for details</a></p>
+</li>

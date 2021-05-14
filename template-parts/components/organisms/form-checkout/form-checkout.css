@@ -1,0 +1,45 @@
+.checkout{
+    @apply flex flex-col gap-4 p-2;
+        .col2-set{
+            @apply border-2 border-bln-gray-font p-2 rounded-md flex flex-col gap-4 w-full;
+                .col-1{
+                    @apply py-4 flex flex-col w-7/12;
+                    .woocommerce-billing-fields{
+                        @apply text-xl text-bln-white-font italic;
+                        .woocommerce-billing-fields__field-wrapper{
+                            @apply text-lg flex flex-col gap-4;
+                            .form-row{
+                                @apply flex flex-col gap-1 text-bln-red;
+                                    .woocommerce-input-wrapper > input{
+                                        @apply bg-transparent p-2 border-bln-gray-font border;
+                                    }
+                            }
+                        }
+                    }
+                }
+                .col-2{
+                    @apply text-xl text-bln-red italic w-2/5;
+                        .woocommerce-additional-fields__field-wrapper{
+                            .form-row{
+                                @apply text-base text-bln-gray-font flex flex-col;
+                                    .woocommerce-input-wrapper > textarea{
+                                        @apply w-full bg-transparent border border-bln-gray-font text-bln-red p-4;
+                                    }
+                            }
+                        }
+                }
+        }
+}
+@screen lg{
+    .checkout{
+        @apply flex flex-row;
+        .col2-set{
+            @apply flex-row;
+                .col-1{
+                    .woocommerce-billing-fields{
+                        @apply text-2xl;
+                    }
+                }
+        }
+    }
+}

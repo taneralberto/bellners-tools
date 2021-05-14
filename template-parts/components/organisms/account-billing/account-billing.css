@@ -1,0 +1,14 @@
+.woocommerce-MyAccount-content > form > h3{
+    @apply text-bln-gray-font text-2xl italic flex justify-center items-center;
+}
+.woocommerce-address-fields{
+    .woocommerce-address-fields__field-wrapper{
+        @apply flex flex-col gap-2 w-3/5;
+            .form-row{
+                @apply flex flex-col text-bln-red;
+                .woocommerce-input-wrapper > input{
+                    @apply p-2 bg-transparent rounded-md border border-bln-white-font;
+                }
+            }
+    }
+}

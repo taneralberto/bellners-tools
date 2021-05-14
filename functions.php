@@ -204,6 +204,7 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require get_template_directory() . '/inc/reorder-tabs.php';
 	require get_template_directory() . '/inc/new-tab-product-cat.php';
 	require get_template_directory() . '/inc/remove-tag-p-form.php';
+	require get_template_directory() . '/inc/disable-shop-page.php';
 }
 
 /**

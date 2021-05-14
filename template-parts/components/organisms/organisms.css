@@ -17,3 +17,10 @@
 @import './form-contact/form-contact.css';
 @import './content-account/content-account.css';
 @import './main-banner/main-banner.css';
+@import './account-details/account-details.css';
+@import './login-account/login-account.css';
+@import './account-billing/account-billing.css';
+@import './form-checkout/form-checkout.css';
+@import './form-checkout/order-review.css';
+@import './404-header/404-header.css';
+@import './about-reasons/about-reasons.css';

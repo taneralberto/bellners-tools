@@ -1,0 +1,22 @@
+.about-page__reasons{
+    @apply flex flex-col justify-center gap-4 py-8;
+    &__li{
+        .number{
+            @apply bg-bln-red text-bln-white-font inline-block text-center float-left w-10 h-10 flex justify-center items-center font-bold;
+        }
+    }
+    &__li > h3{
+        @apply bg-bln-gray-font text-bln-dark-secondary p-2 ml-12 font-bold flex;
+    }
+    &__li > p{
+        @apply block p-4 bg-bln-dark-secondary text-bln-gray-font ml-12 text-justify;
+    }
+}
+@screen lg{
+    .about-page__reasons{
+        @apply flex-wrap flex-row;
+        &__li{
+            @apply w-2/5;
+        }
+    }
+}

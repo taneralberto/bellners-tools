@@ -1,0 +1,15 @@
+.woocommerce-form-login{
+    @apply w-full border-2 border-bln-dark-third flex flex-col items-center;
+        .woocommerce-form-row{
+            @apply flex flex-col p-4;
+                .woocommerce-Input {
+                    @apply bg-transparent p-2 text-bln-gray-font border-bln-white-font border rounded-md;
+                }
+        }
+        .woocommerce-form-row > label{
+            @apply text-bln-red italic text-xl;
+        }
+        .woocommerce-LostPassword{
+            @apply p-4 text-bln-red underline;
+        }
+}

@@ -1,0 +1,46 @@
+.account-page{
+    .woocommerce{
+        .woocommerce-MyAccount-content{
+            .woocommerce-EditAccountForm{
+                @apply flex flex-col gap-1;
+                    fieldset{
+                        @apply border border-bln-white-font p-2;
+                            legend{
+                                @apply text-3xl text-bln-white-font p-1;
+                            }
+                    }
+                    .woocommerce-form-row{
+                        @apply flex flex-col gap-1;
+                        .password-input > input{
+                            @apply p-1 bg-transparent text-bln-gray-font border border-bln-white-font rounded-md;
+                        }
+                    }
+                    .woocommerce-form-row > label{
+                        @apply text-bln-red text-xl;
+                    }
+                    .woocommerce-form-row > input{
+                        @apply p-1 bg-transparent text-bln-gray-font border border-bln-white-font rounded-md;
+                    }
+            }
+            .woocommerce-EditAccountForm > p {
+                .woocommerce-Button{
+                    @apply bg-bln-red text-lg text-white p-4 rounded-md transform transition duration-700;
+                    &:hover{
+                        @apply translate-y-2;
+                    }
+                }
+            }
+        }
+    }
+}
+@screen lg{
+    .account-page{
+        .woocommerce{
+            .woocommerce-MyAccount-content{
+                .woocommerce-EditAccountForm{
+                    @apply w-3/5;
+                }
+        }
+        }
+    }
+}

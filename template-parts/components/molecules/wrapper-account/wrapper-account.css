@@ -1,7 +1,35 @@
 .account-page{
     .woocommerce{
         .woocommerce-MyAccount-content{
-            @apply w-4/6 border-b border-r border-t border-bln-gray-font p-4 text-bln-white-font;
+            @apply border-b border-r border-t border-bln-gray-font p-4 text-bln-gray-font flex flex-col gap-8;
+            .u-columns{
+                @apply flex gap-2;
+                .u-column1 , .u-column2{
+                    @apply border-r border-bln-red px-2;
+                        .woocommerce-Address-title{
+                            @apply text-2xl;
+                        }
+                        .edit{
+                            @apply text-bln-red;
+                        }
+                        address{
+                            @apply text-bln-white-font;
+                        }
+                }
+            }
+        }
+        .woocommerce-MyAccount-content > p > a{
+            @apply text-bln-red;
+        }
+    }
+}
+@screen lg{
+    .account-page{
+        .woocommerce{
+            .woocommerce-MyAccount-content{
+                @apply w-4/6 ;
+            }
+
         }
     }
 }

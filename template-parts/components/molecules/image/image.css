@@ -19,6 +19,9 @@
             }
     }
 }
+.img-404{
+    @apply animate-pulse border-r-4 border-l-4 border-yellow-600;
+}
 .testimonials__card__img{
     @apply rounded-full -mt-16 w-24;
 }
@@ -125,6 +128,7 @@
 .flex-active-slide > a > img{
     @apply w-full;
 }
+
 @screen lg{
     .single-product div.product .woocommerce-product-gallery {
         @apply flex flex-col gap-4 relative float-left w-1/3;

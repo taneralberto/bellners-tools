@@ -1,0 +1,9 @@
+.about-head{
+    @apply flex flex-col items-center justify-center gap-4 text-bln-gray-font text-justify border-b-2 border-dotted border-bln-red pb-4;
+}
+
+@screen lg{
+    .about-head{
+        @apply flex flex-row;
+    }
+}

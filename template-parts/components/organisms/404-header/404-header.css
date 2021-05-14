@@ -1,0 +1,5 @@
+.error-404{
+    &__header{
+        @apply flex flex-col items-center py-4 my-4 border-b-4 border-t-4 border-yellow-600;
+    }
+}
