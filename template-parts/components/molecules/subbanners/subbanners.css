@@ -1,0 +1,30 @@
+.subbanners {
+    @apply mt-4 mx-3 flex flex-col row-gap-3 relative;
+
+    &__banner {
+        @apply overflow-y-hidden flex justify-center items-center;
+        /*height: 150px;*/
+        height: clamp(10rem, 15vw, 20rem);
+
+        img {
+            @apply w-full;
+        }
+    }
+
+    &__call-to-action {
+        @apply text-xl text-bln-white-font font-bold absolute text-center;
+        text-shadow: 0 0 5px #000000;
+    }
+}
+
+@screen md {
+
+    .subbanners {
+        @apply flex-row col-gap-8 mt-8;
+
+        &__banner {
+            @apply w-1/3;
+        }
+    }
+
+}

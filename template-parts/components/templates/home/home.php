@@ -1,6 +1,7 @@
 <div class="home">
     <?php
         Atomic::organism( 'main-banner' );
+        Atomic::molecule( 'subbanners' );
         Atomic::organism( 'list-cat' );
         Atomic::organism( 'slider-section' );
         Atomic::organism( 'parallax' );
