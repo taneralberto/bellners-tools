@@ -14,9 +14,13 @@ if ( isset( $args['type'] ) ) {
 
         the_post_thumbnail( $args['size'], [ 'class' => $args['class'] ] );
 
-    } else {
+    } else if ( isset( $args['size'] ) ) {
 
         the_post_thumbnail( $args['size'] );
+
+    } else {
+
+        the_post_thumbnail();
 
     }
 
