@@ -20,7 +20,7 @@ get_header();
 				the_archive_description( '<div class="archive-description">', '</div>' );
 				?>
 			</header><!-- .page-header -->
-
+<h1>Hola</h1>
 			<?php
 			/* Start the Loop */
 			while ( have_posts() ) :
