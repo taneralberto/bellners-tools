@@ -45,7 +45,7 @@ get_header();
 
 		endif;
 		?>
-
+<?php echo do_shortcode('[fibosearch]'); ?>
 	</main><!-- #main -->
 
 <?php

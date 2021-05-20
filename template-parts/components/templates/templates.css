@@ -12,6 +12,7 @@
 @import './secure-payment/secure-payment.css';
 @import './subsidiaries/subsidiaries.css';
 @import './archive-product/archive-product.css';
+@import './sitemap/sitemap.css';
 
 .site {
     @apply bg-bln-dark-primary;

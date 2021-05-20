@@ -1,0 +1,25 @@
+.sitemap{
+    @apply flex justify-center items-center p-8;
+    .wsp-container{
+        @apply flex flex-col text-bln-gray-font gap-4 bg-bln-dark-secondary p-4;
+        .wsp-pages-title , .wsp-posts-title , .wsp-products-title , .wsp-product_cats-title{
+            @apply text-bln-red text-2xl font-bold flex items-center underline;
+        }
+        .wsp-pages-list , .wsp-posts-list , .wsp-products-list , .wsp-product_cats-list{
+            @apply border-b-2 border-bln-red pl-2;
+        }
+        .wsp-products-list > li > a , .wsp-pages-list > li > a, .wsp-posts-list > li > a , .wsp-product_cats-list > li > a{
+            &:hover{
+                @apply underline;
+            }
+        }
+    }
+}
+
+@screen lg{
+    .sitemap{
+        .wsp-container{
+            @apply grid grid-cols-4 ;
+        }
+    }
+}
