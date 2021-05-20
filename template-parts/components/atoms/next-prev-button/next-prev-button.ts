@@ -1,10 +1,10 @@
 function nextPrevButtons() {
 
-    const $productsSlider : HTMLElement | null = document.querySelector( '.products-slider' );
+    const $productsSlider : HTMLElement | null = document.getElementById( 'slider-content' );
     const $nextButton : HTMLElement | null = document.querySelector( '.next-button' );
     const $prevButton : HTMLElement | null = document.querySelector( '.prev-button' );
 
-    let $$products : NodeListOf<Element> | null = document.querySelectorAll( '.product-card' );
+    let $$products : NodeListOf<Element> | null = document.querySelectorAll( '.slider-section__card' );
     let index : number = 1;
 
     const $firstClone : HTMLElement = <HTMLElement> $$products[0].cloneNode( true );
@@ -24,7 +24,7 @@ function nextPrevButtons() {
 
         $productsSlider.style.transform = `translateX(${-productWidth * index}px)`;
 
-        const getProducts = () => document.querySelectorAll( '.product-card' );
+        const getProducts = () => document.querySelectorAll( '.slider-section__card' );
 
         $productsSlider.addEventListener( 'transitionend', () => {
             $$products = getProducts();
@@ -68,7 +68,7 @@ function nextPrevButtons() {
 
 }
 
-const $productsSlider : HTMLElement | null = document.querySelector( '.products-slider' );
+const $productsSlider : HTMLElement | null = document.getElementById( 'slider-content' );
 
 if ( $productsSlider ) {
     nextPrevButtons();

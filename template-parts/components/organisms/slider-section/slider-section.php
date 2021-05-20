@@ -2,7 +2,7 @@
 
 $args = array(
     'post_type' => 'product',
-    'posts_per_page' => 5,
+    'posts_per_page' => -1,
 );
 
 $query = new WP_Query( $args );
@@ -27,7 +27,7 @@ if ( $query->have_posts() ) {
 
     </header>
 
-    <div class="products-slider">
+    <ul class="slider-section__content" id="slider-content">
 
         <?php
 
@@ -36,11 +36,16 @@ if ( $query->have_posts() ) {
 
                 //$product = wc_get_product( $id );
 
+                echo "<li class='slider-section__card'>";
+
                 Atomic::molecule( 'card', ['type' => 'product'] );
 
+                echo "</li>";
+
             }
+
         ?>
-    </div>
+    </ul>
 </div>
 
 <?php wp_reset_postdata(); } ?>

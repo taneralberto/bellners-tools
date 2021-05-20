@@ -2,7 +2,7 @@
     @apply overflow-hidden mt-8;
 
     &__header {
-        @apply flex justify-between items-center px-6;
+        @apply flex justify-between items-center px-4;
     }
 
     &__title {
@@ -21,15 +21,45 @@
     &__buttons {
         @apply flex w-20 h-10 col-gap-2;
     }
+
+    &__content {
+
+        @apply flex snap snap-x snap-proximity transition duration-150 mt-2;
+    }
+
+    &__card {
+        @apply px-6;
+        min-width: 100%;
+    }
 }
 
-.products-slider {
+@screen xs {
 
-    @apply flex snap snap-x snap-proximity transition duration-150 mt-2;
+    .slider-section {
+
+        &__card {
+            min-width: 50%;
+        }
+    }
+}
+
+@screen lg {
+
+    .slider-section {
+
+        &__card {
+            min-width: 33%;
+        }
+    }
 }
 
 @screen xl {
+
     .slider-section {
         @apply mx-32;
+
+        &__card {
+            min-width: 25%;
+        }
     }
 }

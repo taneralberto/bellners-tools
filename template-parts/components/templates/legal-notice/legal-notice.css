@@ -1,5 +1,5 @@
 .legal-notice{
-    @apply bg-bln-dark-primary text-bln-gray-font px-4 flex flex-col gap-4 justify-center items-center;
+    @apply text-bln-gray-font px-4 flex flex-col gap-4 justify-center items-center;
         &__content{
             @apply w-full text-justify;
         }

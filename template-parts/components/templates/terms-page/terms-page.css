@@ -1,5 +1,5 @@
 .terms-page{
-    @apply bg-bln-dark-primary text-bln-gray-font flex-col gap-2 w-full justify-center py-8 px-4;
+    @apply text-bln-gray-font flex-col gap-2 w-full justify-center py-8 px-4;
 }
 @screen lg{
     .terms-page{

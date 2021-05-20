@@ -11,3 +11,8 @@
 @import './legal-notice/legal-notice.css';
 @import './secure-payment/secure-payment.css';
 @import './subsidiaries/subsidiaries.css';
+
+.site {
+    @apply bg-bln-dark-primary;
+    font-family: 'Montserrat', sans-serif;
+}

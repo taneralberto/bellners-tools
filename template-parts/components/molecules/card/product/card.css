@@ -1,6 +1,5 @@
 .product-card {
-    @apply flex flex-col row-gap-2 px-6 snap-start;
-    min-width: 100%;
+    @apply flex flex-col row-gap-2 snap-start;
 
     &__image {
         @apply bg-bln-dark-secondary px-10 py-20 flex justify-center items-center relative;
@@ -29,24 +28,9 @@
     width: 400px;
 }
 
-@screen xs {
-    .product-card {
-        min-width: 50%;
-    }
-}
-
 @screen lg {
-    .product-card {
-        min-width: 33%;
-    }
 
     .blog-card{
         @apply min-w-0 w-1/3;
-    }
-}
-
-@screen xl {
-    .product-card {
-        min-width: 25%;
     }
 }

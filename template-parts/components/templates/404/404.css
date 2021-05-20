@@ -1,5 +1,5 @@
 .error-404{
-    @apply bg-bln-dark-primary px-2 flex flex-col gap-4;
+    @apply px-2 flex flex-col gap-4;
         &__also-like{
             @apply p-4 flex flex-col gap-4;
                 &--post{

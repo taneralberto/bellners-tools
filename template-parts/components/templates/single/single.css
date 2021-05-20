@@ -1,5 +1,5 @@
 .container-single{
-    @apply px-8 py-4 flex flex-col items-center gap-2 bg-bln-dark-primary text-bln-gray-font;
+    @apply px-8 py-4 flex flex-col items-center gap-2 text-bln-gray-font;
     font-family: 'Montserrat', sans-serif;
 }
 .selected::selection{

@@ -17,8 +17,8 @@
         <?= Atomic::atom( 'button-add-to-cart' ); ?>
     </div>
 
-    <div>
-        <!--<?= Atomic::atom( 'star-rating' ); ?>-->
-    </div>
+    <!--<div>
+        <?php //Atomic::atom( 'star-rating' ); ?>
+    </div>-->
 
 </div>

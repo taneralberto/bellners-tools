@@ -1,5 +1,5 @@
 .product{
-    @apply flex flex-wrap bg-bln-dark-primary text-bln-gray-font w-full gap-8 p-2;
+    @apply flex flex-wrap text-bln-gray-font w-full gap-8 p-2;
 }
 @screen lg{
     @apply px-16 py-8;
