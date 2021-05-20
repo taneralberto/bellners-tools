@@ -208,6 +208,12 @@ if ( class_exists( 'WooCommerce' ) ) {
 }
 
 /**
+ * Config required plugins
+ */
+require get_template_directory() . '/inc/required-plugins.php';
+require_once get_template_directory() . '/inc/class-tgm-plugin-activation.php';
+
+/**
  * Create the shipping services
  */
 require get_template_directory() . '/inc/Classes/shipping-services.php';
