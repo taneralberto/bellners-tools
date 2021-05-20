@@ -1,0 +1,6 @@
+.products {
+
+    &__sorting {
+        @apply p-4 bg-bln-dark-secondary flex items-center justify-between;
+    }
+}

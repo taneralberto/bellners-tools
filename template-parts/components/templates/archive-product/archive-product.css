@@ -1,0 +1,14 @@
+.archive-product {
+
+    &__content {
+        @apply flex col-gap-8 mt-8 mx-8;
+    }
+
+    &__sidebar {
+        min-width: 300px;
+    }
+
+    &__products {
+        @apply w-full;
+    }
+}

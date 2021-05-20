@@ -1,0 +1,7 @@
+.sidebar {
+    @apply text-bln-gray-font;
+
+    .widget-title {
+        @apply text-2xl text-bln-white-font font-extrabold px-4 py-3 bg-bln-dark-secondary;
+    }
+}
