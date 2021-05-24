@@ -5,3 +5,17 @@
         @apply -ml-10 flex;
     }
 }
+.dgwt-wcas-pd-addtc-form{
+    @apply flex-col gap-2;
+        .add_to_cart_inline{
+            @apply p-2 border-2 border-bln-red rounded-md justify-center transition duration-700 w-4/5;
+                &:hover{
+                    @apply bg-bln-dark-secondary;
+                }
+        }
+        .quantity{
+            .qty{
+                @apply bg-transparent border p-2 border-bln-gray-font rounded-md;
+            }
+        }
+}
