@@ -9,7 +9,7 @@
 
     &__form-search {
         @apply order-2;
-        width: clamp(10rem,15vw,15rem);
+        /*width: clamp(10rem,15vw,15rem);*/
     }
 
     &__button-user {
