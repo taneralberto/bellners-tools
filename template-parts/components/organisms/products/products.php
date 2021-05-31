@@ -1,27 +1,6 @@
-<div class="products">
+<ul class="products">
 
-<?php if ( woocommerce_product_loop() ) { ?>
-
-    <div class="products__sorting">
-
-        <?php
-        /**
-         * Hook: woocommerce_before_shop_loop.
-         *
-         * @hooked woocommerce_output_all_notices - 10
-         * @hooked woocommerce_result_count - 20
-         * @hooked woocommerce_catalog_ordering - 30
-         */
-        do_action( 'woocommerce_before_shop_loop' );
-        ?>
-
-    </div>
-
-?>
-
-<ul class="slider-section__content">
-
-<?php
+<?php if ( woocommerce_product_loop() ) {
 
 if ( wc_get_loop_prop( 'total' ) ) {
 
@@ -35,7 +14,7 @@ if ( wc_get_loop_prop( 'total' ) ) {
 
         //wc_get_template_part( 'content', 'product' );
 
-        echo "<li class='slider-section__card'>";
+        echo "<li class='products__card'>";
 
         Atomic::molecule( 'card', ['type' => 'product'] );
 
@@ -44,8 +23,6 @@ if ( wc_get_loop_prop( 'total' ) ) {
 }
 
 ?>
-
-</ul>
 
 <?php
 
@@ -67,4 +44,4 @@ do_action( 'woocommerce_no_products_found' );
 
 ?>
 
-</div>
+</ul>

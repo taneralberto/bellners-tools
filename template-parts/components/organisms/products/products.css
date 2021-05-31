@@ -1,6 +1,37 @@
 .products {
+    @apply w-full;
 
-    &__sorting {
-        @apply p-4 bg-bln-dark-secondary flex items-center justify-between;
+    &__card:not(:first-child) {
+        @apply mt-4;
+    }
+
+    &__card {
+        height: 400px;
+    }
+}
+
+@screen sm {
+    .products {
+        @apply grid grid-cols-2 col-gap-4 row-gap-4;
+
+        &__card:not(:first-child) {
+            @apply mt-0;
+        }
+
+        &__card {
+            height: clamp(300px, 40vw, 400px);
+        }
+    }
+}
+
+@screen md {
+    .products {
+        @apply grid-cols-3;
+    }
+}
+
+@screen xl {
+    .products {
+        @apply grid-cols-4;
     }
 }

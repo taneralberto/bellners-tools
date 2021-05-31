@@ -4,4 +4,47 @@
     .widget-title {
         @apply text-2xl text-bln-white-font font-extrabold px-4 py-3 bg-bln-dark-secondary;
     }
+
+    .woof_redraw_zone {
+        @apply flex flex-col row-gap-4;
+
+        .woof_submit_search_form {
+            @apply px-4 py-2 bg-bln-red text-bln-white-font w-full;
+        }
+
+        .woof_container {
+            @apply m-0 p-0 pt-4 border-t border-bln-dark-secondary;
+
+            &_stock .woof_container_inner:hover {
+                @apply text-bln-red;
+
+                .icheckbox_minimal-red {
+                    background-position: -20px 0;
+                }
+            }
+
+            &_onsales .woof_container_inner:hover {
+                @apply text-bln-red;
+
+                .icheckbox_minimal-red {
+                    background-position: -20px 0;
+                }
+            }
+
+            .woof_list.woof_list_checkbox {
+
+                li:hover {
+                    @apply text-bln-red;
+
+                    .icheckbox_minimal-red {
+                        background-position: -20px 0;
+                    }
+                }
+            }
+        }
+
+        h4 {
+            @apply text-bln-red font-extrabold mb-2;
+        }
+    }
 }

@@ -1,0 +1,6 @@
+.woocommerce-ordering {
+
+    .orderby {
+        @apply bg-bln-dark-primary text-bln-gray-font p-2;
+    }
+}

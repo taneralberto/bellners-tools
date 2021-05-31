@@ -1,14 +1,70 @@
 .archive-product {
 
-    &__content {
-        @apply flex col-gap-8 mt-8 mx-8;
+    &__container {
+        @apply mt-4;
+        margin-right: clamp( 1rem, 4vw, 8rem );
+        margin-left: clamp( 1rem, 4vw, 8rem );
     }
 
     &__sidebar {
-        min-width: 300px;
+        @apply hidden;
+    }
+
+    &__banner {
+        @apply hidden;
+    }
+
+    &__title {
+        @apply text-bln-white-font font-extrabold text-center;
+        font-size: clamp( 1rem, 5vw, 2rem );
+    }
+
+    &__description {
+        @apply hidden;
+    }
+
+    &__sorting {
+        @apply p-4 bg-bln-dark-secondary flex flex-col items-center text-bln-gray-font mt-4;
     }
 
     &__products {
-        @apply w-full;
+        @apply mt-4 flex flex-wrap row-gap-4;
+    }
+}
+
+
+
+@screen lg {
+
+    .archive-product {
+
+        &__container {
+            @apply flex col-gap-8 mt-8;
+        }
+
+        &__sidebar {
+            @apply block;
+            min-width: 300px;
+        }
+
+        &__wrapper {
+            @apply w-full;
+        }
+
+        &__banner {
+            @apply block;
+        }
+
+        &__header {
+            @apply ;
+        }
+
+        &__title {
+            @apply text-left;
+        }
+
+        &__description {
+            @apply block text-sm text-bln-gray-font text-justify font-medium;
+        }
     }
 }

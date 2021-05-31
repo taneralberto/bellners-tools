@@ -1,13 +1,13 @@
 .product-card {
-    @apply flex flex-col row-gap-2 snap-start;
+    @apply snap-start h-full;
 
     &__image {
         @apply bg-bln-dark-secondary px-10 py-20 flex justify-center items-center relative;
-        height: 400px;
+        height: 80%;
     }
 
     &__add-to-cart {
-        @apply hidden;
+        @apply hidden h-5;;
     }
 
     &:hover {

@@ -12,7 +12,7 @@ do_action( 'woocommerce_before_main_content' );
 
 ?>
 
-	<div class="archive-product__content">
+	<div class="archive-product__container">
 
 		<aside class="archive-product__sidebar">
 
@@ -20,36 +20,32 @@ do_action( 'woocommerce_before_main_content' );
 
 		</aside>
 
-		<section class="archive-product__products">
+		<section class="archive-product__wrapper">
 
-			<header class="woocommerce-products-header">
+			<header class="archive-product__header">
 
-				<img src="https://demo.templatetrend.com/prestashop/PRS375/img/c/3-category_default.jpg" style="width:100%;" alt="">
+				<img class="archive-product__banner" src="https://demo.templatetrend.com/prestashop/PRS375/img/c/3-category_default.jpg" style="width:100%;" alt="">
 
-				<?php if ( apply_filters( 'woocommerce_show_page_title', true ) ) : ?>
-					<h1 class="woocommerce-products-header__title page-title"><?php woocommerce_page_title(); ?></h1>
-				<?php endif; ?>
-
-				<div class="archive-product__description">
-					<p>
-					Air Filter
-					If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.
-					All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-					</p>
+				<div class="archive-product__title">
+					<?= Atomic::atom( 'product-category/title' ); ?>
 				</div>
 
-				<?php
-				/**
-				 * Hook: woocommerce_archive_description.
-				 *
-				 * @hooked woocommerce_taxonomy_archive_description - 10
-				 * @hooked woocommerce_product_archive_description - 10
-				 */
-				do_action( 'woocommerce_archive_description' );
-				?>
+				<div class="archive-product__description">
+					<?= Atomic::atom( 'product-category/description' ); ?>
+				</div>
+
+				<div class="archive-product__sorting">
+					<?= Atomic::molecule( 'sorting-products' ); ?>
+				</div>
+
 			</header>
 
-			<?= Atomic::organism( 'products' ); ?>
+			<div class="archive-product__products">
+
+				<?= Atomic::organism( 'products' ); ?>
+
+			</div>
+
 
 		</section>
 
